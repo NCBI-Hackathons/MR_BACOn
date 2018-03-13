@@ -7,10 +7,14 @@ Causal Associations from Metabolite Data<br/>
 Mendelian Randomization is a means by which to test if there is evidence for a causal association between a biomarker of interest and an outcome. It is based on the random assortment of alleles that occurs during meiosis (hence the allusion to Gregor Mendel). It is sometimes referred to as "Nature's Randomized Controlled Trial" and also has roots in instrumental variable theory. The core idea is that alleles are passed down at random and may have effects on a given outcome through a specific biomarker. Since these the assignment of an allele (and it's resultant effect on a biomarker) is given to an individual by random chance - these effects are uncorrelated with sources of error and confounding that traditionally plague association tests. The instrumental variables used for Mendelian Randomization are most often single nucleotide polymorphisms (SNPs) and for BACOn our biomarkers are metabolites. The SNP-metabolite associations can be combined with SNP-CAD associations to give an estimate of the causal effect between the metabolite and CAD.<br/>
 
 <h2>WORKFLOW</h2>
-<h3>Inputs</h3>
-<h4>Step 1</h4>
-<h4>Step 2</h4>
-<h3>Output</h3>
+<h3>Back-end</h3>
+<h4>Data acquisition and filtering</h4>
+<h4>LD pruning</h4>
+
+<h3>Front-end: Shiny application</h3>
+<h4>User inputs:</h4>
+
+<h4>Output</h4>
 INSERT PICTURE OF SHINY FRAMEWORK
 
 <h3>FUTURE GOALS</h3>
