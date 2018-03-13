@@ -43,6 +43,10 @@ fluidPage(theme="simplex.min.css",
             column(6,tags$h3("MR Tests"))
           ),
           fluidRow(
+            # Button
+            column(6,downloadButton("downloadMRTests", "Download"))
+          ),
+          fluidRow(
             column(6,
                    plotOutput("MRtests", height = "600px")
             )
