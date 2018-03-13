@@ -19,7 +19,7 @@ These conditions are rarely met and for SNPs are virtually impossible to test. T
 <h2>WORKFLOW</h2>
 <h3>Back-end</h3>
 <h4>Data acquisition and filtering</h4>
-[**Workflow**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/DataCleaningScripts/Data%20cleaning%20workflow.md )
+[**Workflow**](Data cleaning workflow.md )
 <h4>LD pruning</h4>
 <h4>Mendelian Randomization</h4>
 
