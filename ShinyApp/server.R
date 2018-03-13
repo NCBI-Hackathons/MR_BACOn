@@ -1,9 +1,23 @@
-server <- function(input, output) {
+server <- function(input, output,session) {
   library(TwoSampleMR)
   library(ggplot2)
   #bmi_file <- system.file("data/bmi.txt", package="TwoSampleMR")
   #outcome_dat <- extract_outcome_data(snps=exposure_dat$SNP, outcomes=7)
   #dat <- harmonise_data(exposure_dat, outcome_dat)
+
+  choices_metabolites<- reactive({
+    if (input$tissue=="Urine"){
+      choices_metabolites <- c("Catecholamine","Tyrosine","Glutamine")
+    }
+    else if (input$tissue=="Serum") {
+      choices_metabolites <- c("Arginine","Alanine","Glycine")
+    }
+  })
+  
+  observe({
+    updateSelectInput(session = session, inputId = "metabolite", choices = choices_metabolites())
+  })
+  
   dat <- read.table("testdata.tsv",sep="\t",header = TRUE)
   
   function_forestplot <- function(){
