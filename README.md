@@ -1,4 +1,4 @@
-<b><h1>BACOn (Biomarker Associations for Causality with Outcomes</h1></b>
+<b><h1>BACOn (Biomarker Associations for Causality with Outcomes)</h1></b>
 Causal Associations from Metabolite Data<br/>
 <b>Current Goal</b>: Develop a software tool to explore mendelian randomization associations between metabolites and coronary artery disease (CAD). <br/>
 (DELETE THIS)
