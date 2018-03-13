@@ -18,6 +18,11 @@ Mendelian Randomization is a means by which to test if there is evidence for a c
 <h4>Output</h4>
 INSERT PICTURE OF SHINY FRAMEWORK
 
+<h3>Figures</h3>
+<h4>Figure 1: workflow</h4>
+<h4>Figure 2: data summary</h4>
+<h4>Figure 3: Shiny app interface</h4>
+
 <h3>FUTURE GOALS</h3>
 Develop a software tool to explore mendeial randomization associations between metabolites and any clinical outcomes.<br/>
 <b>Future Input</b>: Users metabolite QTL data and GWAS data of interest.<br/>
