@@ -63,18 +63,40 @@ server <- function(input, output) {
   
   
   
-  output$MRtests <- renderPlot({
+  #output$OLDMRtests <- renderPlot({
+  #  res <- mr(dat)
+  #  p1 <- mr_scatter_plot(res, dat)
+  #  mrtests_data <- p1[[1]]$data
+  #  mrtests_plot <- ggplot(data=mrtests_data,aes(x=beta.exposure,y=beta.outcome)) +
+  #    geom_point() +
+  #    labs(title=input$tissue,x=paste("SNP effect on",input$metabolite,sep = " "),y=paste("SNP effect on",input$disease,sep = " "))+
+  #    theme(text = element_text(size=12),
+  #          axis.text.y = element_text(size=8),plot.title = element_text(hjust = 0.5))
+  #  print
+  #  (mrtests_plot)
+  #})
+  
+  function_MRtests <- function(){
     res <- mr(dat)
     p1 <- mr_scatter_plot(res, dat)
     mrtests_data <- p1[[1]]$data
-    mrtests_plot <- ggplot(data=mrtests_data,aes(x=beta.exposure,y=beta.outcome)) +
-      geom_point() +
-      labs(title=input$tissue,x=paste("SNP effect on",input$metabolite,sep = " "),y=paste("SNP effect on",input$disease,sep = " "))+
-      theme(text = element_text(size=12),
-            axis.text.y = element_text(size=8),plot.title = element_text(hjust = 0.5))
-    print
-    (mrtests_plot)
+    mrtests_plot <- ggplot(data=res, aes(x=method, y=b, ymin=b-se, ymax=b+se)) +
+      geom_pointrange() + 
+      theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+      labs(x="Tests", y="Effect Size",title="Effect Size predicted for MR tests")+
+    return(mrtests_plot)
+  }
+  output$MRtests <- renderPlot({
+    print(function_MRtests())
   })
+  
+  output$downloadMRTests <- downloadHandler(
+    filename = function() { paste('MRTests', '.png', sep='') },
+    content = function(file) {
+      device <- function(..., width, height) grDevices::png(..., width = width, height = height, res = 300, units = "in")
+      ggsave(file, plot = function_MRtests(), device = device)
+    }
+  )
   
   # Downloadable csv of selected dataset ----
   output$downloadData <- downloadHandler(

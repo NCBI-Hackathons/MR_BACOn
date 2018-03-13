@@ -4,11 +4,11 @@ renderInputs <- function(prefix) {
   wellPanel(
     fluidRow(
       column(3,
+             selectInput('tissue', 'Tissue', c("Urine","Serum"))),
+      column(3,
              selectInput('metabolite', 'Metabolite', c("Catecholamine","Tyrosine","Glutamine"))),
       column(3,
-             selectInput('disease', 'Disease', c("Coronary Heart Disease"))),
-      column(3,
-             selectInput('tissue', 'Tissue', c("Urine","Serum")))
+             selectInput('disease', 'Disease', c("Coronary Heart Disease")))
     )
     
   )
@@ -22,7 +22,7 @@ fluidPage(theme="simplex.min.css",
           ),
           
           # Application title
-          tags$h2("MetabAssoc"),
+          tags$h2("MR BACOn:Biomarker Associations for Causality with Outcomes"),
           #p("An adaptation of the",
           #  tags$a(href="http://glimmer.rstudio.com/systematicin/retirement.withdrawal/", "retirement app"),
           #  "from",
@@ -41,6 +41,10 @@ fluidPage(theme="simplex.min.css",
           ),
           fluidRow(
             column(6,tags$h3("MR Tests"))
+          ),
+          fluidRow(
+            # Button
+            column(6,downloadButton("downloadMRTests", "Download"))
           ),
           fluidRow(
             column(6,
