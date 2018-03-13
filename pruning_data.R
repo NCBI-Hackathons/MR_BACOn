@@ -22,7 +22,7 @@ cad_snp <- read.delim(file = "/Users/ncolaian/Documents/cad_test.txt", sep = "\t
 colnames(metab_mat)[c(1,2,7,9)] <- c("chr_name", "chrom_start", "pval.exposure", "id.exposure")
 colnames(cad_snp)[c(1,2,3,9,11)] <- c("SNP", "chr_name", "chrom_start", "id.exposure", "pval.exposure")
 
-check_position_data(metab_mat) #NEEDS FIXING
+check_position_data(metab_mat) 
 intersect_metab_cad(metab_mat, cad_snp)
 clump_data(intersect_metab_cad(metab_mat, cad_snp))
 
@@ -91,8 +91,13 @@ check_position_data <- function(mat) {
   snp_locations = getBM(attributes=snp_attributes, filters="snp_filter", 
                         values=snp_ids, mart=snp_mart)
 
-  #BELOW NEEDS FIXING
-  mat$chrom_start <- snp_locations$chrom_start
-  mat$chr_name <- snp_locations$chr_name
+
+  #BELOW PRBABLY NEEDS TO BE IN AN APPLY FXN
+  for (i in snp_locations$chrom_start) {
+    id <- snp_locations$refsnp_id[snp_locations$chrom_start == i]
+    mat$chrom_start[mat$SNP == id] <- i
+    mat$chr_name[mat$SNP == id] <-  snp_locations$chr_name[snp_locations$chrom_start == i]
+  }
+
   return(mat)
 }
