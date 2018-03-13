@@ -16,4 +16,8 @@ INSERT PICTURE OF SHINY FRAMEWORK
 <h3>FUTURE GOALS</h3>
 Develop a software tool to explore mendeial randomization associations between metabolites and any clinical outcomes.<br/>
 <b>Future Input</b>: Users metabolite QTL data and GWAS data of interest.<br/>
-<b>Future Output</b>: 
+<b>Future Output</b>:
+
+<h3>References</h3>
+CITE TWOSAMPLEMR PAKAGE
+
