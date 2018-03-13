@@ -80,7 +80,7 @@ if ($tissue eq 'serum') {
       #   print scalar(@array)."\n";
            # $array[9] =~ s/([0-9]+\.[0-9]*)(e\-[0-9])/$10$2/g;
     #  $pval = $array[9] +0;
-          print qq{@array\n};
+      #    print qq{@array\n};
          if ($array[10] <= $pval_cutoff) { 
             print $outfh qq{$array[0]\t$array[1]\t$array[2]\t$array[8]\t$array[10]\n};
          }
