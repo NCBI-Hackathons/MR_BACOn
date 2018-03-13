@@ -11,7 +11,7 @@ renderInputs <- function(prefix) {
              selectInput('tissue', 'Tissue', c("Urine","Serum")))
     )
     
-    )
+  )
 }
 
 # Define UI for application 
@@ -41,15 +41,20 @@ fluidPage(theme="simplex.min.css",
           ),
           fluidRow(
             column(6,tags$h3("MR Tests"))
-            ),
+          ),
           fluidRow(
             column(6,
                    plotOutput("MRtests", height = "600px")
-          )
+            )
           ),
           fluidRow(
             column(6,tags$h3("Funnel Plot")),
             column(6,tags$h3("Forest Plot"))
+          ),
+          fluidRow(
+            # Button
+            column(6,downloadButton("downloadFunnelPlot", "Download")),
+            column(6,downloadButton("downloadForestPlot", "Download"))
           ),
           fluidRow(
             column(6,

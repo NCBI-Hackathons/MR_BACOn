@@ -1,12 +1,12 @@
 server <- function(input, output) {
   library(TwoSampleMR)
   library(ggplot2)
-  bmi_file <- system.file("data/bmi.txt", package="TwoSampleMR")
-  outcome_dat <- extract_outcome_data(snps=exposure_dat$SNP, outcomes=7)
-  dat <- harmonise_data(exposure_dat, outcome_dat)
+  #bmi_file <- system.file("data/bmi.txt", package="TwoSampleMR")
+  #outcome_dat <- extract_outcome_data(snps=exposure_dat$SNP, outcomes=7)
+  #dat <- harmonise_data(exposure_dat, outcome_dat)
+  dat <- read.table("testdata.tsv",sep="\t",header = TRUE)
   
-  output$forestPlot <- renderPlot({
-    
+  function_forestplot <- function(){
     res_single <- mr_singlesnp(dat)
     p2 <- mr_forest_plot(res_single)
     data_to_plot <- p2[[1]]$data
@@ -18,10 +18,14 @@ server <- function(input, output) {
       ggtitle(input$metabolite) + 
       theme(text = element_text(size=12),
             axis.text.y = element_text(size=5),plot.title = element_text(hjust = 0.5))
-    print(fp)
+    return(fp)
+  }
+  
+  output$forestPlot <- renderPlot({
+    print(function_forestplot())
   })
   
-  output$funnelPlot <- renderPlot({
+  function_funplot <- function(){
     res_single <- mr_singlesnp(dat)
     ivw = res_single[res_single$SNP=="All - Inverse variance weighted","b"]
     mregger = res_single[res_single$SNP=="All - MR Egger","b"]
@@ -34,8 +38,28 @@ server <- function(input, output) {
       geom_vline(aes(xintercept=mregger,color="MR Egger"),show.legend =TRUE) +
       theme(text = element_text(size=12),
             axis.text.y = element_text(size=8),plot.title = element_text(hjust = 0.5))
-    print(funplot)
-    })
+    return(funplot)
+  }
+  
+  output$funnelPlot <- renderPlot({
+    print(function_funplot())
+  })
+  
+  output$downloadFunnelPlot <- downloadHandler(
+    filename = function() { paste('funnelOutput', '.png', sep='') },
+    content = function(file) {
+      device <- function(..., width, height) grDevices::png(..., width = width, height = height, res = 300, units = "in")
+      ggsave(file, plot = function_funplot(), device = device)
+    }
+  )
+  
+  output$downloadForestPlot <- downloadHandler(
+    filename = function() { paste('forestOutput', '.png', sep='') },
+    content = function(file) {
+      device <- function(..., width, height) grDevices::png(..., width = width, height = height, res = 300, units = "in")
+      ggsave(file, plot = function_forestplot(), device = device)
+    }
+  )
   
   output$MRtests <- renderPlot({
     res <- mr(dat)
@@ -58,5 +82,7 @@ server <- function(input, output) {
     content = function(file) {
       write.csv(dat, file, row.names = FALSE)
     })
+  
+  
   
 }
