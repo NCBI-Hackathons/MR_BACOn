@@ -7,7 +7,7 @@ use strict;
 # Yue Hao
 
 my( $gwas_assoc_file, $tissue, $readfh, $outfile, $outfh, $line, @array,
-    $pval_cutoff
+    $pval_cutoff, $pval, @sub, @new, $first, $second
 );
 
 $gwas_assoc_file = $ARGV[0];  #cad.add.160614.website.txt   #merged_serum_gwas.txt  #metab_urine_single_targeted.txt
@@ -37,6 +37,7 @@ if ($tissue eq 'serum') {
 	    $line = <$readfh>;
         $line =~ s/\r?\n*//g;
         @array = split /\t/, $line;
+        
         if ($array[6] <= $pval_cutoff) {     # 10^-5
             print $outfh qq{$array[0]\tNA\tNA\t$array[4]\t$array[6]\t$array[7]\n};
         }
@@ -48,6 +49,7 @@ if ($tissue eq 'serum') {
 	    $line = <$readfh>;
         $line =~ s/\r?\n*//g;
         @array = split /\t/, $line;
+        
         if ($array[6] <= $pval_cutoff) {    # 10^-5
             print $outfh qq{$array[2]\t$array[0]\t$array[1]\t$array[8]\t$array[6]\t$array[5]\n};
         }
@@ -59,12 +61,30 @@ if ($tissue eq 'serum') {
     while (!eof($readfh)) {
 	  $line = <$readfh>;
       $line =~ s/\r?\n*//g;
-      @array = split /\t/, $line;
-      if ($array[9] <= $pval_cutoff) { 
-            print $outfh qq{$array[0]\t$array[1]\t$array[2]\t$array[8]\t$array[9]\n};
-            
-      }
-    }
+      @array = split /\s+/, $line;  #7.10e-06
+      if (scalar(@array) != 13) {
+        @new = ();
+        foreach(@array){
+            if ($_ =~  /\-?\.{1}[0-9]+\.{1}[0-9]+/) {
+                $first = $_;
+                $first =~ s/^(\-?\.{1}[0-9]+)(\.{1}[0-9]+)$/$1/;
+                $second = $_;
+                $second =~ s/^(\-?\.{1}[0-9]+)(\.{1}[0-9]+)$/$2/;
+                push @new, $first;
+                push @new, $second;
+             } else {push @new, $_;
+             }
+         }
+         @array = @new;
+       }
+      #   print scalar(@array)."\n";
+           # $array[9] =~ s/([0-9]+\.[0-9]*)(e\-[0-9])/$10$2/g;
+    #  $pval = $array[9] +0;
+          print qq{@array\n};
+         if ($array[10] <= $pval_cutoff) { 
+            print $outfh qq{$array[0]\t$array[1]\t$array[2]\t$array[8]\t$array[10]\n};
+         }
+     } 
 }
 
 close $outfh;
