@@ -6,7 +6,7 @@ The user will need to select three inputs from drop-down menus:
   2. Tissue in which metabolite-SNP association data was collected
   3. Outcome of interest
   
- <img src="https://github.com/NCBI-Hackathons/metaboliteassoc/blob/ShinyApp/Images/Inputs_UI" alt="Inputs" width="200">
+ <img src="https://github.com/NCBI-Hackathons/metaboliteassoc/blob/ShinyApp/Images/Inputs_UI.png" alt="Inputs" width="200">
   
 ## OUTPUTS
 The user will be able to view three plots:
