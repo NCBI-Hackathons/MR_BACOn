@@ -7,10 +7,10 @@ server <- function(input, output,session) {
 
   choices_metabolites<- reactive({
     if (input$tissue=="Urine"){
-      choices_metabolites <- read.table("Data/",sep=)
+      choices_metabolites <- read.table("data/metab_info/serum_metaboliteMap.txt",sep="\",header=TRUE)[]
     }
     else if (input$tissue=="Serum") {
-      choices_metabolites <- read.table("Data/",sep=)
+      choices_metabolites <- read.table("data/metab_info/serum_metaboliteMap.txt",sep="\",header=TRUE)[]
     }
   })
   
