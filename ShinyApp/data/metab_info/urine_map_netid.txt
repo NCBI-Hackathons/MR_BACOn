@@ -1,6 +1,3 @@
-Mapping of Chenomx IDs to KEGG, HMDB, and CAS
-=============================================
-
 Metabolite	Chenomx	KEGG	HMDB	CAS
 acetate	CNX0009	C00033	HMDB00042	64-19-7
 acetone	CNX0011	C00207	HMDB01659	67-64-1
