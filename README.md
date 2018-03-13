@@ -1,6 +1,6 @@
 # metaboliteassoc
 Causal Associations from Metabolite Data
-<b>Current Goal</b>: Develop a software tool to explore mendelian randomization associations between metabolites and coronary artery disease (CAD)\n
+<b>Current Goal</b>: Develop a software tool to explore mendelian randomization associations between metabolites and coronary artery disease (CAD)\
 <b>Current Input</b>: Metabolite of interest to the user\n
 <b>Current Output</b>: ???
 
