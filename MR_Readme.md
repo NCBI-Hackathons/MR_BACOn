@@ -6,7 +6,10 @@ Mendelian randomization etc etc etc <br/>
 	* Metabolite input
 	* Metabolite QTL data file in .txt format
 	* Disease GWAS data in .txt format 
-<b>Current Inputs</b>: <br/>
-    Metabolite data text file<br/>
-	  Disease GWAS data text file<br/>
-<b>Current Outputs</b>: Harmonisation between the two data sets<br/>
+### Current Inputs:
+    * Metabolite data text file<br/>
+    * Disease GWAS data text file<br/>
+### Current Outputs: 
+	Dataset that is the output of harmonisation between the two QTLs.
+## References:
+	[TwoSampleMR Package](https://github.com/MRCIEU/TwoSampleMR)
