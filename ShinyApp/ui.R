@@ -44,7 +44,7 @@ fluidPage(theme="simplex.min.css",
           ),
           fluidRow(
             # Button
-            column(6,downloadButton("downloadMRTests", "Download"))
+            column(6,downloadButton("downloadMRTests", "Download Plot"))
           ),
           fluidRow(
             column(6,
@@ -57,8 +57,8 @@ fluidPage(theme="simplex.min.css",
           ),
           fluidRow(
             # Button
-            column(6,downloadButton("downloadFunnelPlot", "Download")),
-            column(6,downloadButton("downloadForestPlot", "Download"))
+            column(6,downloadButton("downloadFunnelPlot", "Download Plot")),
+            column(6,downloadButton("downloadForestPlot", "Download Plot"))
           ),
           fluidRow(
             column(6,
@@ -70,6 +70,6 @@ fluidPage(theme="simplex.min.css",
           ),
           fluidRow(
             # Button
-            downloadButton("downloadData", "Download")
+            downloadButton("downloadData", "Download Data")
           )
 )

@@ -97,8 +97,9 @@ server <- function(input, output,session) {
     mrtests_plot <- ggplot(data=res, aes(x=method, y=b, ymin=b-se, ymax=b+se)) +
       geom_pointrange() + 
       theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-      labs(x="Tests", y="Effect Size",title="Effect Size predicted for MR tests")+
-    return(mrtests_plot)
+      labs(title="Effect Size predicted for MR tests")+
+      xlab("Tests") + ylab("Effect Size") + 
+      return(mrtests_plot)
   }
   output$MRtests <- renderPlot({
     print(function_MRtests())
