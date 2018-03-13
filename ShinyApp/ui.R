@@ -44,7 +44,11 @@ fluidPage(theme="simplex.min.css",
           ),
           fluidRow(
             # Button
+<<<<<<< HEAD
             column(6,downloadButton("downloadMRTests", "Download Plot"))
+=======
+            column(6,downloadButton("downloadMRTests", "Download"))
+>>>>>>> c71b6ecbea0691c7013d21fe17df64fb3d178dd5
           ),
           fluidRow(
             column(6,
