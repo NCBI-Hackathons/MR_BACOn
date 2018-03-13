@@ -1,7 +1,7 @@
 #SNPs -> Pruning algorithm
 
 #http://corearray.sourceforge.net/tutorials/SNPRelate/#installation-of-the-package-snprelate
-#ource("http://bioconductor.org/biocLite.R")
+#source("http://bioconductor.org/biocLite.R")
 #biocLite("gdsfmt")
 #biocLite("SNPRelate")
 
