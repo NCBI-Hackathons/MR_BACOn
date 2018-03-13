@@ -19,5 +19,5 @@ Develop a software tool to explore mendeial randomization associations between m
 <b>Future Output</b>:
 
 <h3>References</h3>
-CITE TWOSAMPLEMR PAKAGE
+CITE TWOSAMPLEMR PACKAGE
 
