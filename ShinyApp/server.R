@@ -61,6 +61,8 @@ server <- function(input, output) {
     }
   )
   
+  
+  
   output$MRtests <- renderPlot({
     res <- mr(dat)
     p1 <- mr_scatter_plot(res, dat)
