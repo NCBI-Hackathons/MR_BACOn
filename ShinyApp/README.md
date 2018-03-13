@@ -6,7 +6,7 @@ The user will need to select three inputs from drop-down menus:
   2. Tissue in which metabolite-SNP association data was collected
   3. Outcome of interest
   
- <img src="https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/ShinyApp/Images/Inputs_UI.png" alt="Inputs" width="200">
+ <img src="https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/ShinyApp/Images/Inputs_UI.png" alt="Inputs" width="600">
   
 ## OUTPUTS
 The user will be able to view three plots:
@@ -14,7 +14,7 @@ The user will be able to view three plots:
   2. Funnel plot: This plots the effect sizes of each SNPs to their inverse of their standard errors and overlays the effect size calculated by MR Egger and Inverse variance weighted.
   3. Forest plot: This plot will provide confidence intervals for individual SNPs.
   
-  
+  <img src="https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/ShinyApp/Images/OutputPlots_UI_Annotated.png" alt="Output Plots" width="600">
   
   
   
