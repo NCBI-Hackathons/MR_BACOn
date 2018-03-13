@@ -7,7 +7,7 @@ Causal Associations from Metabolite Data<br/>
 <h3>Inputs</h3>
 <h4>Step 1</h4>
 <h4>Step 2</h4>
-<32>Output</h3>
+<h3>Output</h3>
 INSERT PICTURE OF SHINY FRAMEWORK
 
 <h3>FUTURE GOALS</h3>
