@@ -7,8 +7,10 @@ Causal Associations from Metabolite Data<br/>
 <b>Current Output</b>: ???<br/>
 (DELETE)
 <h2>WORKFLOW</h2>
-<h2>Input</h2>
-<h2>Output</h2>
+<h3>Inputs</h3>
+<h4>Step 1</h4>
+<h4>Step 2</h4>
+<32>Output</h3>
 INSERT PICTURE OF SHINY FRAMEWORK
 
 <h3>FUTURE GOALS</h3>
