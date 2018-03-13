@@ -10,6 +10,7 @@ Mendelian Randomization is a means by which to test if there is evidence for a c
 <h3>Back-end</h3>
 <h4>Data acquisition and filtering</h4>
 <h4>LD pruning</h4>
+<h4>Mendelian Randomization</h4>
 
 <h3>Front-end: Shiny application</h3>
 <h4>User inputs:</h4>
