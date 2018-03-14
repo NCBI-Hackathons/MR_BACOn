@@ -1,3 +1,5 @@
+[Go to the main README](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/README.md)
+
 **In Progress**
 
 To link metabolite to our trait of interest we must go through our intermediate linker of SNPs. Using the GWAS values from Metabolite QTL and Trait QTL, 
