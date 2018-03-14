@@ -1,5 +1,6 @@
+source("plotFunctions.R")
+
 server <- function(input, output,session) {
-  library(TwoSampleMR)
   library(ggplot2)
   #bmi_file <- system.file("data/bmi.txt", package="TwoSampleMR")
   #outcome_dat <- extract_outcome_data(snps=exposure_dat$SNP, outcomes=7)
@@ -7,10 +8,10 @@ server <- function(input, output,session) {
 
   choices_metabolites<- reactive({
     if (input$tissue=="Urine"){
-      choices_metabolites <- read.table("data/metab_info/serum_metaboliteMap.txt",sep="\",header=TRUE)["metabolonDescription"]
+      choices_metabolites <- as.character(levels(read.table("data/metab_info/urine_map.txt",sep="\t",header=TRUE)$metabolite))
     }
     else if (input$tissue=="Serum") {
-      choices_metabolites <- read.table("data/metab_info/urine_map_netid.txt",sep="\",header=TRUE)["Metabolite"]
+      choices_metabolites <- as.character(levels(read.table("data/metab_info/serum_map.txt",sep="\t",header=TRUE)$metabolite))
     }
   })
   
@@ -18,45 +19,40 @@ server <- function(input, output,session) {
     updateSelectInput(session = session, inputId = "metabolite", choices = choices_metabolites())
   })
   
-  dat <- read.table("testdata.tsv",sep="\t",header = TRUE)
+  dat_to_run <- reactiveValues(data = NULL)
   
-  function_forestplot <- function(){
-    res_single <- mr_singlesnp(dat)
-    p2 <- mr_forest_plot(res_single)
-    data_to_plot <- p2[[1]]$data
-    fp <- ggplot(data=data_to_plot, aes(x=SNP, y=b, ymin=lo, ymax=up)) +
-      geom_pointrange() + 
-      geom_hline(yintercept=0, lty=2) +  # add a dotted line at x=1 after flip
-      coord_flip() +  # flip coordinates (puts labels on y axis)
-      xlab("SNPs") + ylab("Effect Size") +
-      ggtitle(input$metabolite) + 
-      theme(text = element_text(size=12),
-            axis.text.y = element_text(size=5),plot.title = element_text(hjust = 0.5))
-    return(fp)
-  }
+  observeEvent(input$runif, {
+    dat_to_run$data <- read.table("testdata.tsv",sep="\t",header = TRUE)
+  })
+  observeEvent(input$reset, {
+    dat_to_run$data <- NULL
+  })  
   
   output$forestPlot <- renderPlot({
-    print(function_forestplot())
+    if (is.null(dat_to_run$data)) {
+      return()
+    }
+    else{
+      print(function_forestplot(dat_to_run$data))
+    }
   })
   
-  function_funplot <- function(){
-    res_single <- mr_singlesnp(dat)
-    ivw = res_single[res_single$SNP=="All - Inverse variance weighted","b"]
-    mregger = res_single[res_single$SNP=="All - MR Egger","b"]
-    p4 <- mr_funnel_plot(res_single)
-    funnel_data <- p4[[1]]$data
-    funplot <- ggplot(data=funnel_data, aes(x=b, y=1/se)) +
-      geom_point() +
-      labs(title = input$disease, x = expression(beta[IV]), y = expression("1/SE"["IV"]), color = "MR Method\n") +
-      geom_vline(aes(xintercept=ivw, color="Inverse variance \n weighted"),show.legend =TRUE) +
-      geom_vline(aes(xintercept=mregger,color="MR Egger"),show.legend =TRUE) +
-      theme(text = element_text(size=12),
-            axis.text.y = element_text(size=8),plot.title = element_text(hjust = 0.5))
-    return(funplot)
-  }
-  
   output$funnelPlot <- renderPlot({
-    print(function_funplot())
+    if (is.null(dat_to_run$data)) {
+      return()
+    }
+    else{
+    print(function_funplot(dat_to_run$data))
+    }
+  })
+  
+  output$MRtests <- renderPlot({
+    if (is.null(dat_to_run$data)){ 
+      return()
+    }
+    else{
+     print(function_MRtests(dat_to_run$data))
+    }
   })
   
   output$downloadFunnelPlot <- downloadHandler(
@@ -66,7 +62,6 @@ server <- function(input, output,session) {
       ggsave(file, plot = function_funplot(), device = device)
     }
   )
-  
   output$downloadForestPlot <- downloadHandler(
     filename = function() { paste('forestOutput', '.png', sep='') },
     content = function(file) {
@@ -74,36 +69,6 @@ server <- function(input, output,session) {
       ggsave(file, plot = function_forestplot(), device = device)
     }
   )
-  
-  
-  
-  #output$OLDMRtests <- renderPlot({
-  #  res <- mr(dat)
-  #  p1 <- mr_scatter_plot(res, dat)
-  #  mrtests_data <- p1[[1]]$data
-  #  mrtests_plot <- ggplot(data=mrtests_data,aes(x=beta.exposure,y=beta.outcome)) +
-  #    geom_point() +
-  #    labs(title=input$tissue,x=paste("SNP effect on",input$metabolite,sep = " "),y=paste("SNP effect on",input$disease,sep = " "))+
-  #    theme(text = element_text(size=12),
-  #          axis.text.y = element_text(size=8),plot.title = element_text(hjust = 0.5))
-  #  print
-  #  (mrtests_plot)
-  #})
-  
-  function_MRtests <- function(){
-    res <- mr(dat)
-    p1 <- mr_scatter_plot(res, dat)
-    mrtests_data <- p1[[1]]$data
-    mrtests_plot <- ggplot(data=res, aes(x=method, y=b, ymin=b-se, ymax=b+se)) +
-      geom_pointrange() + 
-      theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-      labs(title="Effect Size predicted for MR tests")+
-      xlab("Tests") + ylab("Effect Size") + 
-      return(mrtests_plot)
-  }
-  output$MRtests <- renderPlot({
-    print(function_MRtests())
-  })
   
   output$downloadMRTests <- downloadHandler(
     filename = function() { paste('MRTests', '.png', sep='') },
