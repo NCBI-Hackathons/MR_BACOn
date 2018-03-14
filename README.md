@@ -40,8 +40,16 @@ Mendelian Randomization (MR) is a means by which to test if there is evidence fo
 
 <br>
 <br>
+<h3>Team</h3>
+Cavin Ward-Caviness, PhD, EPA<br>
+Yue Hao, NC State<br>
+Nur Shahir, UNC - Chapel Hill<br>
+Nicholas Colaianni, UNC - Chapel Hill<br>
+Jayashree Kumar, UNC - Chapel Hill<br>
+Kevin Currin, UNC - Chapel Hill<br>
 
- <h3>References</h3>
+
+<h3>References</h3>
 
 Burgess, S., Butterworth, A. and Thompson, S.G. 2013. Mendelian randomization analysis with multiple genetic variants using summarized data. Genetic Epidemiology 37(7), pp. 658–665.<br>
 Hemani, G., Zheng, J., Wade, K.H., Laurin, C., Elsworth, B., Burgess, S., Bowden, J., Langdon, R., Tan, V., Yarmolinsky, J., Shihab, H.A., Timpson, N., Evans, D.M., Relton, C., Martin, R.M., Davey Smith, G., Gaunt, T.R., Haycock, P.C. and The MR-Base Collaboration 2016. MR-Base: a platform for systematic causal inference across the phenome using billions of genetic associations. BioRxiv.<br>
