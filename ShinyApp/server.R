@@ -1,35 +1,46 @@
 source("plotFunctions.R")
+source("backend_functions.R")
 
 server <- function(input, output,session) {
   library(ggplot2)
   #bmi_file <- system.file("data/bmi.txt", package="TwoSampleMR")
   #outcome_dat <- extract_outcome_data(snps=exposure_dat$SNP, outcomes=7)
   #dat <- harmonise_data(exposure_dat, outcome_dat)
-
+  
+  
   choices_metabolites<- reactive({
-    if (input$tissue=="Urine"){
-      choices_metabolites <- as.character(levels(read.table("data/metab_info/urine_map.txt",sep="\t",header=TRUE)$metabolite))
-    }
-    else if (input$tissue=="Serum") {
-      choices_metabolites <- as.character(levels(read.table("data/metab_info/serum_map.txt",sep="\t",header=TRUE)$metabolite))
-    }
+    choices_metabolites <- get_drop_down_metabolites(input$tissue)
   })
   
   observe({
     updateSelectInput(session = session, inputId = "metabolite", choices = choices_metabolites())
   })
   
-  dat_to_run <- reactiveValues(data = NULL)
+  dat_to_run <- reactiveValues(data = data.frame())
   
   observeEvent(input$runif, {
-    dat_to_run$data <- read.table("testdata.tsv",sep="\t",header = TRUE)
+    #met = get_metabolite(input$metabolite,input$tissue)
+    if (input$runif !=0){
+      t = input$tissue
+      m = input$metabolite
+      dat_ret <- tryCatch(perform_mr(t,"",m),error=function(e){return(1)})
+      if (dat_ret!=1){
+        dat_to_run$data <- as.data.frame(dat_ret)
+      }
+      else{
+        dat_to_run$data <- data.frame()
+      }
+    }
+    else{
+      return()
+    }
   })
   observeEvent(input$reset, {
-    dat_to_run$data <- NULL
+    dat_to_run$data <- data.frame()
   })  
   
   output$forestPlot <- renderPlot({
-    if (is.null(dat_to_run$data)) {
+    if (nrow(dat_to_run$data)==0) {
       return()
     }
     else{
@@ -38,7 +49,7 @@ server <- function(input, output,session) {
   })
   
   output$funnelPlot <- renderPlot({
-    if (is.null(dat_to_run$data)) {
+    if (nrow(dat_to_run$data)==0) {
       return()
     }
     else{
@@ -47,7 +58,7 @@ server <- function(input, output,session) {
   })
   
   output$MRtests <- renderPlot({
-    if (is.null(dat_to_run$data)){ 
+    if (nrow(dat_to_run$data)==0){ 
       return()
     }
     else{
