@@ -11,20 +11,7 @@ Mendelian Randomization (MR) is a means by which to test if there is evidence fo
 
 https://mrcieu.github.io/TwoSampleMR/
 
-<br>Causal Associations from Metabolite Data<br/>
-<b>Current Goal</b>: Develop a software tool to explore mendelian randomization associations between metabolites and coronary artery disease (CAD). <br/>
-<h3>Assumptions of MR about SNP</h3>
-There are three assumptions that MR makes about each variant which are described below for the SNP-metabolite MR analyses in in BACOn<br/>
-<ol>
-  <li>the SNP is associated with the metabolite</li>
-  <li>the SNP is not associated with confounders of the outcome</li>
-  <li>the SNP is independent of the outcome when conditioned on the metabolite</li>
-</ol>
-<br/>
-These conditions are rarely met and for SNPs are virtually impossible to test. There are several analysis approaches (IVW, MR Egger, Wedighted Median, etc...) that are used for MR which combine multiple variants, some of which can account for invalid variants in a variety of different ways. For this reason they often produce slightly different causal estimates but should be largely overlapping for consistent effects.
-<br>
-
-<h2>Detailed descriptions</h2>
+<h2>Detailed descriptions of the pipeline</h2>
 <h3>Back-end</h3>
 
    [**Data acquisition and filtering**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/DataCleaningScripts/Data_cleaning_workflow.md)
@@ -37,10 +24,19 @@ These conditions are rarely met and for SNPs are virtually impossible to test. T
 
    [**R shiny application**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/ShinyApp/README.md)
 
-<h3>Figures</h3>
-<h4>Figure 1: workflow</h4>
-<h4>Figure 2: data summary</h4>
-<h4>Figure 3: Shiny app interface</h4>
+
+<br>Causal Associations from Metabolite Data<br/>
+<b>Current Goal</b>: Develop a software tool to explore mendelian randomization associations between metabolites and coronary artery disease (CAD). <br/>
+<h3>Assumptions of MR about SNP</h3>
+There are three assumptions that MR makes about each variant which are described below for the SNP-metabolite MR analyses in in BACOn<br/>
+<ol>
+  <li>the SNP is associated with the metabolite</li>
+  <li>the SNP is not associated with confounders of the outcome</li>
+  <li>the SNP is independent of the outcome when conditioned on the metabolite</li>
+</ol>
+<br/>
+These conditions are rarely met and for SNPs are virtually impossible to test. There are several analysis approaches (IVW, MR Egger, Wedighted Median, etc...) that are used for MR which combine multiple variants, some of which can account for invalid variants in a variety of different ways. For this reason they often produce slightly different causal estimates but should be largely overlapping for consistent effects.
+<br>
 
 <h3>FUTURE GOALS</h3>
 Develop a software tool to explore mendeial randomization associations between metabolites and any clinical outcomes.<br/>
