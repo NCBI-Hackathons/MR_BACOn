@@ -41,7 +41,7 @@ Mendelian Randomization (MR) is a means by which to test if there is evidence fo
 <br>
 <br>
 <h3>Team</h3>
-Cavin Ward-Caviness, PhD, EPA<br>
+Dr. Cavin Ward-Caviness, EPA<br>
 Yue Hao, NC State<br>
 Nur Shahir, UNC - Chapel Hill<br>
 Nicholas Colaianni, UNC - Chapel Hill<br>
