@@ -28,13 +28,15 @@ Metabolite profiling was by MS (Metabolon)
 [**Metabolites: Serum & Urine**](http://metabolomics.helmholtz-muenchen.de/gwas/index.php?task=download )
 
 ### 2. Merge shin et. al association output files
-- ./merge_gwas_assoc.sh
+	* ./merge_gwas_assoc.sh
 
 ### 3. Filter the data with a P-value threshold
 Currently the P-value threshold was set to 10^-5.
-- ./filter_data_pval.pl <association_file> <Pvalue_cutoff> <cad | serum | urine>
+
+	* ./filter_data_pval.pl <association_file> <Pvalue_cutoff> <cad | serum | urine>
+  
 The output file from this step will be formatted to be suitable for the LD pruning process.
 
 ### 4.(optional) Obtain a subset of SNPs that present in both the CAD and the metabolite datasets
-- ./get_intersect_snps.pl <trait_assoc_file> <metab_assoc_file> <serum | urine>
+	* ./get_intersect_snps.pl <trait_assoc_file> <metab_assoc_file> <serum | urine>
 
