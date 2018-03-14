@@ -5,6 +5,6 @@ account: ncolaian
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 298839
-bundleId: 1266992
+bundleId: 1268471
 url: https://ncolaian.shinyapps.io/shinyapp/
-when: 1520973168.60271
+when: 1521042141.42233
