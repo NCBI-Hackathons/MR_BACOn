@@ -35,20 +35,17 @@ perform_mr <- function(tissue, dataset, metid) {
 }
 
 perform_metab_pathway_data <- function(metab_list, tiss, dataset) {
-  metab_list <- list(c("leucine", "cholesterol", "kynurenine", "acetylphosphate"),
-                     c("leucine", "cholesterol", "kynurenine", "alanine"),
+  metab_list <- list(c("leucine", "cholesterol", "kynurenine", "kynurenine"),
+                     c("no", "cholesterol", "kynurenine", "alanine"),
                      c("cholesterol", "glucose", "alanine", "acetate"))
   names(metab_list) <- c("fp_4/4", "fp_3/4", "fp_1/4")
   percents <- c()
   for ( i in metab_list) {
-    print(i)
     passed <- 0
     run <- 0
     for ( j in i ) {
-      print(j)
       run <- run+1
-      harm <- tryCatch({perform_mr(tissue,"",j)},error=function(x){return(0)})
-      print(harm)
+      harm <- tryCatch({perform_mr(tiss,"",j)},error=function(x){return(0)})
       #looks at MR EGGER results
       if ( harm != 0 ) {
         passed <- passed+1
@@ -70,6 +67,7 @@ create_ggplot<- function(named_vec) {
     ggtitle("Pathway Analysis")+
     xlab("Pathway Name")+
     ylab("Percentage of Metabolites Associated With Trait")+
+    scale_y_continuous(limits = c(0,100))+
     theme(plot.title = element_text(hjust = 0.5))
   return(p)
 }
