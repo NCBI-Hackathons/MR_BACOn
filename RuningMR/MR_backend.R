@@ -32,22 +32,6 @@ disease_outcome_dat <- read_outcome_data(
     eaf_col = "eaf",
     pval_col = "pval"
   )
-  disease_outcome_dat$outcome <- "CAD"
-  return(disease_outcome_dat)
-}
-
-### Pick disease of choice
-disease_outcome_dat <- read_outcome_data(CAD_studies,
-    snps = metabolite_clump_data$SNP,
-    sep = ",",
-    snp_col = "SNP",
-    beta_col = "beta",
-    se_col = "se",
-    effect_allele_col = "effect_allele",
-    other_allele_col = "other_allele",
-    eaf_col = "eaf",
-    pval_col = "pval"
-  )
 
 dat <- harmonise_data(
   exposure_dat = metabolite_clump_data, 
