@@ -4,11 +4,10 @@
 ![Workflow](workflow.png)
 
 <h2>Usage:</h2>
-<h3>Front-end</h3>
 
-   [**R shiny application**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/ShinyApp/README.md)
+   [**R Shiny app User Manual**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/ShinyApp/README.md)
    
-<h3>Back-end</h3>
+<h3>Back-end workflow</h3>
 
    [**Data acquisition and filtering**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/DataCleaningScripts/Data_cleaning_workflow.md)
 
