@@ -83,11 +83,19 @@ server <- function(input, output,session) {
     }
   )
   
+  output$downloadPathwayPlot <- downloadHandler(
+    filename = function() { paste('forestOutput', '.png', sep='') },
+    content = function(file) {
+      device <- function(..., width, height) grDevices::png(..., width = width, height = height, res = 300, units = "in")
+      ggsave(file, plot = function_forestplot(), device = device)
+    }
+  )
+  
   output$downloadMRTests <- downloadHandler(
     filename = function() { paste('MRTests', '.png', sep='') },
     content = function(file) {
       device <- function(..., width, height) grDevices::png(..., width = width, height = height, res = 300, units = "in")
-      ggsave(file, plot = function_MRtests(), device = device)
+      ggsave(file, plot = perform_metab_pathway_data("",input$tissue,""), device = device)
     }
   )
   
@@ -100,6 +108,13 @@ server <- function(input, output,session) {
       write.csv(dat, file, row.names = FALSE)
     })
   
-  
+  output$pathwayPlot <- renderPlot({
+    if (nrow(dat_to_run$data)==0){ 
+      return()
+    }
+    else{
+      print(perform_metab_pathway_data("",input$tissue,""))
+    }
+  })
   
 }

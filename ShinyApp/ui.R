@@ -45,38 +45,43 @@ fluidPage(theme="simplex.min.css",
           fluidRow(
             column(6,tags$h3("Output"))
           ),
-          #fluidRow(
-          #column(6,tags$h3("MR Tests"))
-          #),
+          fluidRow(
+            column(6,tags$h3("MR Tests")),
+            column(6,tags$h3("Funnel Plot"))
+          ),
           fluidRow(
             # Button
             column(6,textOutput("text1"))
           ),
           fluidRow(
             # Button
-            column(6,downloadButton("downloadMRTests", "Download Plot"))
+            column(6,downloadButton("downloadMRTests", "Download Plot")),
+            column(6,downloadButton("downloadFunnelPlot", "Download Plot"))
           ),
           fluidRow(
             column(6,
                    plotOutput("MRtests", height = "600px")
+                   
+            ),
+            column(6,
+                   plotOutput("funnelPlot", height = "600px")
             )
           ),
           fluidRow(
-            column(6,tags$h3("Funnel Plot")),
-            column(6,tags$h3("Forest Plot"))
+            column(6,tags$h3("Forest Plot")),
+            column(6,tags$h3("Pathway Plot"))
           ),
           fluidRow(
             # Button
-            column(6,downloadButton("downloadFunnelPlot", "Download Plot")),
-            column(6,downloadButton("downloadForestPlot", "Download Plot"))
+            column(6,downloadButton("downloadForestPlot", "Download Plot")),
+            column(6,downloadButton("downloadPathwayPlot", "Download Plot"))
           ),
           fluidRow(
             column(6,
-                   plotOutput("funnelPlot", height = "600px")
+                   plotOutput("forestPlot", height = "600px")
             ),
             column(6,
-                   plotOutput("forestPlot", height = "600px")
-            )
+                   plotOutput("pathwayPlot", height= "600px"))
           ),
           fluidRow(
             # Button
