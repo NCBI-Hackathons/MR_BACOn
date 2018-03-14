@@ -9,6 +9,10 @@ renderInputs <- function(prefix) {
              selectInput(inputId='metabolite', label ='Metabolite', choices = NULL)),
       column(3,
              selectInput(inputId='disease', label = 'Disease', choices =c("Coronary Heart Disease")))
+    ),
+    fluidRow(
+      column(3,actionButton("runif", "Run")),
+      column(3,actionButton("reset","Clear"))
     )
     
   )
