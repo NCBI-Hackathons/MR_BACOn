@@ -7,7 +7,6 @@ server <- function(input, output,session) {
   #outcome_dat <- extract_outcome_data(snps=exposure_dat$SNP, outcomes=7)
   #dat <- harmonise_data(exposure_dat, outcome_dat)
   
-  
   choices_metabolites<- reactive({
     choices_metabolites <- get_drop_down_metabolites(input$tissue)
   })
