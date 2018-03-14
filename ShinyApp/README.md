@@ -1,7 +1,7 @@
 
 [Go to the main README](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/README.md)
 
-# Web interface for BACON OR CATMINT
+# Web interface for MR BACOn
 
 ## INPUTS
 The user will need to select three inputs from drop-down menus:
