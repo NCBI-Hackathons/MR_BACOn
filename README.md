@@ -1,4 +1,6 @@
-<b><h1>_MR BACOn 🐷_</h1></b>
+
+[<h1>_MR BACOn 🐷_</h1>](https://ncolaian.shinyapps.io/shinyapp/)
+
 <h2>A Shiny application for Mendelian Randomization analysis of Biomarker Associations for Causality with Outcomes</h2>
 
 ![Workflow](workflow.png)
@@ -33,9 +35,6 @@ Mendelian Randomization (MR) is a means by which to test if there is evidence fo
 <br>
 <br>
 
-More information from https://mrcieu.github.io/TwoSampleMR/
-![Two sample MR](twosampleMR.png)
-
  <h3>References</h3>
 
 Burgess, S., Butterworth, A. and Thompson, S.G. 2013. Mendelian randomization analysis with multiple genetic variants using summarized data. Genetic Epidemiology 37(7), pp. 658–665.<br>
@@ -45,7 +44,7 @@ Nikpay, M., Goel, A., Won, H.-H., Hall, L.M., Willenborg, C., Kanoni, S., Salehe
 Raffler, J., Friedrich, N., Arnold, M., Kacprowski, T., Rueedi, R., Altmaier, E., Bergmann, S., Budde, K., Gieger, C., Homuth, G., Pietzner, M., Römisch-Margl, W., Strauch, K., Völzke, H., Waldenberger, M., Wallaschofski, H., Nauck, M., Völker, U., Kastenmüller, G. and Suhre, K. 2015. Genome-Wide Association Study with Targeted and Non-targeted NMR Metabolomics Identifies 15 Novel Loci of Urinary Human Metabolic Individuality. PLoS Genetics 11(9), p. e1005487.<br>
 Shin, S.-Y., Fauman, E.B., Petersen, A.-K., Krumsiek, J., Santos, R., Huang, J., Arnold, M., Erte, I., Forgetta, V., Yang, T.-P., Walter, K., Menni, C., Chen, L., Vasquez, L., Valdes, A.M., Hyde, C.L., Wang, V., Ziemek, D., Roberts, P., Xi, L. and Soranzo, N. 2014. An atlas of genetic influences on human blood metabolites. Nature Genetics 46(6), pp. 543–550.<br>
 
-
+https://mrcieu.github.io/TwoSampleMR/
 http://jcviolins.com/<br>
 https://emojipedia.org/pig-face/<br>
 https://www.shareicon.net/style/3d?p=385<br>
