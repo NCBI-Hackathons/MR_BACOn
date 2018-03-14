@@ -1,4 +1,4 @@
-library(KEGGREST)
+#library(KEGGREST)
 
 getMetabPathway <- function(metab.name) {
 
