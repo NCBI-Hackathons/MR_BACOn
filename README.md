@@ -22,7 +22,7 @@ Mendelian Randomization (MR) is a means by which to test if there is evidence fo
 
 ![mr_outline_figure](mr_outline_figure.png)
 
-#More information from https://mrcieu.github.io/TwoSampleMR/
+More information from https://mrcieu.github.io/TwoSampleMR/
 ![Two sample MR](twosampleMR.png)
 
-#References
+References
