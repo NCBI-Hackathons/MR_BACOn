@@ -4,7 +4,7 @@ renderInputs <- function(prefix) {
   wellPanel(
     fluidRow(
       column(3,
-             selectInput(inputId='tissue', label ='Tissue', choices =c("Urine","Serum"))),
+             selectInput(inputId='tissue', label ='Tissue', choices =c("urine","serum"))),
       column(3,
              selectInput(inputId='metabolite', label ='Metabolite', choices = NULL)),
       column(3,

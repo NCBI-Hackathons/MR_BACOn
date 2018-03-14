@@ -1,3 +1,6 @@
+
+[Go to the main README](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/README.md)
+
 # MR_backend script
 Backend script for running mendelian randomization for Shiny App <i><br/>
 Introduction: <br/>

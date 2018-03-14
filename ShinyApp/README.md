@@ -1,3 +1,6 @@
+
+[Go to the main README](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/README.md)
+
 # Web interface for BACON OR CATMINT
 
 ## INPUTS
