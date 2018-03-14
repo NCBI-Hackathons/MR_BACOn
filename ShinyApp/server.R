@@ -55,7 +55,7 @@ server <- function(input, output,session) {
       return()
     }
     else{
-    print(function_funplot(dat_to_run$data))
+      print(function_funplot(dat_to_run$data))
     }
   })
   
@@ -64,7 +64,7 @@ server <- function(input, output,session) {
       return()
     }
     else{
-     print(function_MRtests(dat_to_run$data))
+      print(function_MRtests(dat_to_run$data))
     }
   })
   
