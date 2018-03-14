@@ -21,7 +21,7 @@ These conditions are rarely met and for SNPs are virtually impossible to test. T
 <h3>Back-end</h3>
 <h4>Data acquisition and filtering</h4>
 
-[**Workflow**](../DataCleaningScripts/Data_cleaning_workflow.md)
+[**Workflow**](metaboliteassoc/DataCleaningScripts/Data_cleaning_workflow.md)
 
 <h4>LD pruning</h4>
 <h4>Mendelian Randomization</h4>
