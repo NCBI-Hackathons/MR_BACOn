@@ -1,6 +1,6 @@
 library(shiny)
 
-renderInputs <- function(prefix) {
+renderInputs <- function() {
   wellPanel(
     fluidRow(
       column(3,
@@ -26,12 +26,8 @@ fluidPage(theme="simplex.min.css",
           ),
           
           # Application title
-          tags$h2("MR BACOn: Biomarker Associations for Causality with Outcomes"),
-          #p("An adaptation of the",
-          #  tags$a(href="http://glimmer.rstudio.com/systematicin/retirement.withdrawal/", "retirement app"),
-          #  "from",
-          #  tags$a(href="http://systematicinvestor.wordpress.com/", "Systematic Investor"),
-          #  "to demonstrate the use of Shiny's new grid options."),
+          tags$h2("MR BACOn: Mendelian Randomization analysis of Biomarker Associations for Causality with Outcomes"),
+          #img(src="pig-face.png", width = "50px", height = "50px"),
           p("Find causal associations between your metabolite of interest and disease."),
           hr(),
           
@@ -40,7 +36,11 @@ fluidPage(theme="simplex.min.css",
             #column(6, tags$h3("Scenario B"))
           ),
           fluidRow(
-            renderInputs("a")
+            renderInputs()
+          ),
+          fluidRow(
+            # Button
+            column(6,tags$h1(textOutput("text1")))
           ),
           fluidRow(
             column(6,tags$h3("Output"))
@@ -48,10 +48,6 @@ fluidPage(theme="simplex.min.css",
           fluidRow(
             column(6,tags$h3("MR Tests")),
             column(6,tags$h3("Funnel Plot"))
-          ),
-          fluidRow(
-            # Button
-            column(6,textOutput("text1"))
           ),
           fluidRow(
             # Button
