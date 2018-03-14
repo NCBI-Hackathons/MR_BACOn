@@ -30,6 +30,8 @@ Mendelian Randomization (MR) is a means by which to test if there is evidence fo
 
 ![](eg_cholesterol3.png)
 
+<br>
+<br>
 
 More information from https://mrcieu.github.io/TwoSampleMR/
 ![Two sample MR](twosampleMR.png)
