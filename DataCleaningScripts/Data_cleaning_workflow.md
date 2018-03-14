@@ -1,5 +1,5 @@
 
-[Go to main readme](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/README.md)
+[Go to the main README](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/README.md)
 
 <h3>Data cleaning workflow</h3>
 
