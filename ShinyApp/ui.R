@@ -41,10 +41,16 @@ fluidPage(theme="simplex.min.css",
           ),
           fluidRow(
             renderInputs("a")
-            #column(6, renderInputs("b"))
           ),
           fluidRow(
-            column(6,tags$h3("MR Tests"))
+              column(6,tags$h3("Output"))
+            ),
+          #fluidRow(
+            #column(6,tags$h3("MR Tests"))
+          #),
+          fluidRow(
+            # Button
+            column(6,textOutput("text1"))
           ),
           fluidRow(
             # Button
