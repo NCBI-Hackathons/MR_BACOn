@@ -23,12 +23,14 @@ server <- function(input, output,session) {
     if (input$runif !=0){
       t = input$tissue
       m = input$metabolite
+      #dat_ret <- perform_mr(t,"",m)
       dat_ret <- tryCatch(perform_mr(t,"",m),error=function(e){return(1)})
       if (dat_ret!=1){
         dat_to_run$data <- as.data.frame(dat_ret)
       }
       else{
         dat_to_run$data <- data.frame()
+        output$text1 <- renderText({"No association found"})
       }
     }
     else{
