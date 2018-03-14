@@ -23,6 +23,7 @@ server <- function(input, output,session) {
       t = input$tissue
       m = input$metabolite
       #dat_ret <- perform_mr(t,"",m)
+      output$text1 <- renderText({""})
       dat_ret <- tryCatch(perform_mr(t,"",m),error=function(e){return(1)})
       if (dat_ret!=1){
         dat_to_run$data <- as.data.frame(dat_ret)
@@ -71,22 +72,22 @@ server <- function(input, output,session) {
     filename = function() { paste('funnelOutput', '.png', sep='') },
     content = function(file) {
       device <- function(..., width, height) grDevices::png(..., width = width, height = height, res = 300, units = "in")
-      ggsave(file, plot = function_funplot(), device = device)
+      ggsave(file, plot = function_funplot(dat_to_run$data), device = device)
     }
   )
   output$downloadForestPlot <- downloadHandler(
     filename = function() { paste('forestOutput', '.png', sep='') },
     content = function(file) {
       device <- function(..., width, height) grDevices::png(..., width = width, height = height, res = 300, units = "in")
-      ggsave(file, plot = function_forestplot(), device = device)
+      ggsave(file, plot = function_forestplot(dat_to_run$data), device = device)
     }
   )
   
   output$downloadPathwayPlot <- downloadHandler(
-    filename = function() { paste('forestOutput', '.png', sep='') },
+    filename = function() { paste('pathwayOutput', '.png', sep='') },
     content = function(file) {
       device <- function(..., width, height) grDevices::png(..., width = width, height = height, res = 300, units = "in")
-      ggsave(file, plot = function_forestplot(), device = device)
+      ggsave(file, plot = perform_metab_pathway_data("",input$tissue,""), device = device)
     }
   )
   
@@ -94,7 +95,7 @@ server <- function(input, output,session) {
     filename = function() { paste('MRTests', '.png', sep='') },
     content = function(file) {
       device <- function(..., width, height) grDevices::png(..., width = width, height = height, res = 300, units = "in")
-      ggsave(file, plot = perform_metab_pathway_data("",input$tissue,""), device = device)
+      ggsave(file, plot = function_MRtests(dat_to_run$data), device = device)
     }
   )
   
@@ -104,7 +105,7 @@ server <- function(input, output,session) {
       paste("HolderForData.csv", sep = "")
     },
     content = function(file) {
-      write.csv(dat, file, row.names = FALSE)
+      write.csv(dat_to_run$data, file, row.names = FALSE)
     })
   
   output$pathwayPlot <- renderPlot({
