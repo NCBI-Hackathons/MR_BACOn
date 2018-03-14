@@ -28,6 +28,8 @@ Mendelian Randomization (MR) is a means by which to test if there is evidence fo
 
 ![](eg_cholesterol1.png)
 
+<h3>Output</h3>
+
 ![](eg_cholesterol2.png)
 
 ![](eg_cholesterol3.png)
