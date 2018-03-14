@@ -27,16 +27,15 @@ These conditions are rarely met and for SNPs are virtually impossible to test. T
 <h2>Detailed descriptions</h2>
 <h3>Back-end</h3>
 
-[**Data acquisition and filtering**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/DataCleaningScripts/Data_cleaning_workflow.md)
+   [**Data acquisition and filtering**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/DataCleaningScripts/Data_cleaning_workflow.md)
 
-<h4>LD pruning</h4>
-<h4>Mendelian Randomization</h4>
+   [**LD pruning**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/LDpruning/pruning.md)
 
-<h3>Front-end: Shiny application</h3>
-<h4>User inputs:</h4>
+   [**Mendelian Randomization**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/RuningMR/MR_Readme.md)
 
-<h4>Output</h4>
-INSERT PICTURE OF SHINY FRAMEWORK
+<h3>Front-end</h3>
+
+   [**R shiny application**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/ShinyApp/README.md)
 
 <h3>Figures</h3>
 <h4>Figure 1: workflow</h4>
