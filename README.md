@@ -17,7 +17,7 @@
 
    [**Mendelian Randomization**](./RuningMR/MR_Readme.md)
 
-   [**Pathway analysis**](./Pathway_analysis/Pathway.md)
+   [**Pathway analysis**](./Pathway_analysis/README.md)
 
 <h2>What is MR?</h2>
 
