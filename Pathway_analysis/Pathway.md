@@ -4,15 +4,11 @@
 
 Pathway analysis for MR BACOn.
 
-### 1. Obtaining the complete Metabolite xml file from the Human Metabolome Database.
+### 1. Obtaining the complete Metabolite xml file from the [Human Metabolome Database](http://www.hmdb.ca/downloads ).
 
-[**HMDB**](http://www.hmdb.ca/downloads )
-
-### 2. Map metabolites with their HMDB (and KEGG) ids using the Chemical Translation Service.
+### 2. Map metabolites with their HMDB (and KEGG) ids using the [Chemical Translation Service](http://cts.fiehnlab.ucdavis.edu/ ).
 
 Provided by the [West Coast Metabolomics Center](http://metabolomics.ucdavis.edu/Downloads).
-
-[**CTS**](http://cts.fiehnlab.ucdavis.edu/ )
 
 ### 3. Parse xml file, get pathway information.
 	 ./parse_pathways.pl
