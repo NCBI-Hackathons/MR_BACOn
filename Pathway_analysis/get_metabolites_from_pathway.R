@@ -2,7 +2,6 @@ setwd("path/to/Pathway_analysis")
 
 #HMDB pathways
 
-
 metaboite_of_interest <-"creatine"
 #user defined
 
@@ -18,6 +17,7 @@ Pathmetlist$Assoc <- sample(100, size = nrow(Pathmetlist), replace = TRUE)
 Ranked_paths <- aggregate(Pathmetlist[, 4], list(Pathmetlist$Pathway), mean)
 colnames(Ranked_paths) <- c("Pathway", "Avg_assoc")
 Ranked_paths <- Ranked_paths[order(-Ranked_paths$Avg_assoc),]
+
 
 getPathway <- function(metab.name) {
   
