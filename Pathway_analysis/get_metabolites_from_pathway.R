@@ -10,6 +10,14 @@ Pathmetlist <- getPathway(metaboite_of_interest)
 
 write.csv(Pathmetlist, file = "Pathwaymetablist.csv")
 
+#Run MR for the list of metabolites, rank pathways by association scores
+#Testing using random data:
+set.seed(1)
+Pathmetlist$Assoc <- sample(100, size = nrow(Pathmetlist), replace = TRUE)
+
+Ranked_paths <- aggregate(Pathmetlist[, 4], list(Pathmetlist$Pathway), mean)
+colnames(Ranked_paths) <- c("Pathway", "Avg_assoc")
+Ranked_paths <- Ranked_paths[order(-Ranked_paths$Avg_assoc),]
 
 getPathway <- function(metab.name) {
   
