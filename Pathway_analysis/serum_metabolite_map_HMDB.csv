@@ -1,0 +1,178 @@
+Metabolite,MetabolonID,SecondaryID
+2-hydroxybutyrate (AHB),M21044,HMDB00008
+pyridoxate,M31555,HMDB00017
+4-hydroxyphenylacetate,M00541,HMDB00020
+betaine,M03141,HMDB00043
+adenosine,M00555,HMDB00050
+"bilirubin (Z,Z)",M27716,HMDB00054
+creatine,M27718,HMDB00064
+pipecolate,M01444,HMDB00070
+glycerophosphorylcholine (GPC),M15990,HMDB00086
+citrate,M01564,HMDB00094
+choline,M15506,HMDB00097
+glucose,M20489,HMDB00122
+glycine,M32338,HMDB00123
+glycerol,M15122,HMDB00131
+glycerol 3-phosphate (G3P),M15365,HMDB00131
+guanosine,M01573,HMDB00133
+glycerate,M01572,HMDB00139
+glutamate,M32322,HMDB00148
+hypoxanthine,M03127,HMDB00157
+tyrosine,M01299,HMDB00158
+phenylalanine,M00064,HMDB00159
+inositol 1-phosphate (I1P),M01481,HMDB00159
+alanine,M32339,HMDB00161
+proline,M01898,HMDB00162
+threonine,M01284,HMDB00167
+asparagine,M34283,HMDB00168
+mannose,M00584,HMDB00169
+isoleucine,M01125,HMDB00172
+histidine,M00059,HMDB00177
+lysine,M01301,HMDB00182
+serine,M32315,HMDB00187
+aspartate,M15996,HMDB00191
+cystine,M31454,HMDB00192
+inosine,M01123,HMDB00195
+X-12712,M34322,HMDB00195
+indoleacetate,M27513,HMDB00197
+acetylcarnitine,M32198,HMDB00201
+alpha-ketoglutarate,M33453,HMDB00208
+phenylacetate,M15958,HMDB00209
+ornithine,M01493,HMDB00214
+palmitoylcarnitine,M22189,HMDB00222
+riboflavin (Vitamin B2),M01827,HMDB00244
+X-12441,M33883,HMDB00247
+serotonin (5HT),M02342,HMDB00259
+5-oxoproline,M01494,HMDB00267
+urate,M01604,HMDB00289
+xanthine,M03147,HMDB00292
+urea,M01670,HMDB00294
+uridine,M00606,HMDB00296
+3-hydroxybutyrate (BHBA),M00542,HMDB00357
+2-methylbutyroylcarnitine,M35431,HMDB00378
+3-hydroxy-2-ethylpropionate,M32397,HMDB00396
+alpha-hydroxyisovalerate,M33937,HMDB00407
+N-(2-furoyl)glycine,M31536,HMDB00439
+allantoin,M01107,HMDB00462
+3-methylhistidine,M15677,HMDB00479
+3-methyl-2-oxovalerate,M15676,HMDB00491
+"5alpha-androstan-3beta,17beta-diol disulfate",M37190,HMDB00493
+arginine,M01638,HMDB00517
+5-dodecenoate (12:1n7),M33968,HMDB00529
+N-acetylglycine,M27710,HMDB00532
+creatinine,M00513,HMDB00562
+cysteine,M31453,HMDB00574
+gamma-glutamylphenylalanine,M33422,HMDB00594
+erythronate*,M33477,HMDB00613
+cholate,M22842,HMDB00619
+deoxycholate,M01114,HMDB00626
+"1,6-anhydroglucose",M21049,HMDB00640
+glutamine,M00053,HMDB00641
+arabinose,M00575,HMDB00646
+decanoylcarnitine,M33941,HMDB00651
+indolelactate,M18349,HMDB00671
+homocitrulline,M22138,HMDB00679
+3-indoxyl sulfate,M27672,HMDB00682
+leucine,M00060,HMDB00687
+isovalerylcarnitine,M34407,HMDB00688
+4-methyl-2-oxopentanoate,M22116,HMDB00695
+methionine,M01302,HMDB00696
+hexanoylcarnitine,M32328,HMDB00705
+aspartylphenylalanine,M22175,HMDB00706
+glycoursodeoxycholate,M39379,HMDB00708
+hippurate,M15753,HMDB00714
+isovalerate,M34732,HMDB00718
+trans-4-hydroxyproline,M32319,HMDB00725
+isobutyrylcarnitine,M33441,HMDB00736
+malate,M01303,HMDB00744
+3-(4-hydroxyphenyl)lactate,M32197,HMDB00755
+3-phenylpropionate (hydrocinnamate),M15749,HMDB00764
+mannitol,M15335,HMDB00765
+N-acetylalanine,M01585,HMDB00766
+pseudouridine,M33442,HMDB00767
+octadecanedioate,M36754,HMDB00782
+octanoylcarnitine,M33936,HMDB00791
+X-11469,M32786,HMDB00802
+X-11540,M32857,HMDB00802
+propionylcarnitine,M32452,HMDB00824
+pentadecanoate (15:0),M01361,HMDB00826
+stearoylcarnitine,M34409,HMDB00848
+trigonelline (N'-methylnicotinate),M32401,HMDB00875
+valine,M01649,HMDB00883
+valerate,M33443,HMDB00892
+taurodeoxycholate,M12261,HMDB00896
+7-methylguanine,M35114,HMDB00897
+citrulline,M02132,HMDB00904
+tryptophan,M00054,HMDB00929
+taurochenodeoxycholate,M18494,HMDB00951
+biliverdin,M02137,HMDB01008
+lathosterol,M33488,HMDB01170
+estrone 3-sulfate,M18474,HMDB01425
+phosphate,M11438,HMDB01429
+3-methoxytyrosine,M12017,HMDB01434
+dehydroisoandrosterone sulfate (DHEA-S),M32425,HMDB01448
+acetylphosphate,M15488,HMDB01494
+caffeine,M00569,HMDB01847
+4-acetamidophenol,M12032,HMDB01859
+paraxanthine,M18254,HMDB01860
+X-10500,M27256,HMDB01877
+docosapentaenoate (n3 DPA; 22:5n3),M32504,HMDB01877
+3-methylxanthine,M32445,HMDB01886
+theophylline,M18394,HMDB01889
+alpha-tocopherol,M01561,HMDB01893
+salicylate,M01515,HMDB01895
+naproxen,M12122,HMDB01923
+atenolol,M38658,HMDB01924
+ibuprofen,M17799,HMDB01925
+metoprolol,M18037,HMDB01932
+7-methylxanthine,M34390,HMDB01991
+eicosapentaenoate (EPA; 20:5n3),M18467,HMDB01999
+myristoleate (14:1n5),M32418,HMDB02000
+butyrylcarnitine,M32412,HMDB02013
+oleamide,M32458,HMDB02117
+X-02249,M32587,HMDB02120
+"1,3,7-trimethylurate",M34404,HMDB02123
+docosahexaenoate (DHA; 22:6n3),M19323,HMDB02183
+adrenate (22:4n6),M32980,HMDB02226
+laurylcarnitine,M34534,HMDB02250
+margarate (17:0),M01121,HMDB02259
+arachidonate (20:4n6),M01110,HMDB02344
+tiglyl carnitine,M35428,HMDB02366
+glycerol 2-phosphate,M27728,HMDB02520
+taurolithocholate 3-sulfate,M36850,HMDB02580
+"1,5-anhydroglucitol (1,5-AG)",M20675,HMDB02712
+androsterone sulfate,M31591,HMDB02759
+cortisone,M01769,HMDB02802
+1-oleoylglycerophosphocholine,M33960,HMDB02815
+theobromine,M18392,HMDB02825
+X-12040,M33391,HMDB02961
+erythritol,M20699,HMDB02994
+ergothioneine,M37459,HMDB03045
+1-methylurate,M34395,HMDB03099
+palmitoleate (16:1n7),M33447,HMDB03229
+N-acetylornithine,M15630,HMDB03357
+X-12798,M34481,HMDB03405
+4-acetamidobutanoate,M01558,HMDB03681
+threitol,M35854,HMDB04136
+"N2,N2-dimethylguanosine",M35137,HMDB04824
+homostachydrine*,M33009,HMDB04827
+stachydrine,M34384,HMDB04827
+X-13548,M35326,HMDB06039
+linoleate (18:2n6),M01105,HMDB06270
+phenylacetylglutamine,M35126,HMDB06344
+oleoylcarnitine,M35160,HMDB06464
+1-myristoylglycerophosphocholine,M35626,HMDB10379
+1-stearoylglycerophosphocholine,M33961,HMDB10384
+1-linoleoylglycerophosphocholine,M34419,HMDB10386
+1-methylxanthine,M34389,HMDB10738
+"1,7-dimethylurate",M34400,HMDB11103
+1-stearoylglycerophosphoethanolamine,M34416,HMDB11130
+gamma-glutamylisoleucine*,M34456,HMDB11170
+1-palmitoylglycerophosphoethanolamine,M35631,HMDB11503
+1-oleoylglycerophosphoethanolamine,M35628,HMDB11506
+p-cresol sulfate,M36103,HMDB11635
+gamma-glutamylglutamate,M36738,HMDB11737
+gamma-glutamylglutamine,M02730,HMDB11738
+gamma-glutamyltyrosine,M02734,HMDB11741
+1-heptadecanoylglycerophosphocholine,M33957,HMDB12108
+phenylalanylphenylalanine,M38150,HMDB13302
