@@ -8,7 +8,9 @@ renderInputs <- function() {
       column(3,
              selectInput(inputId='metabolite', label ='Metabolite', choices = NULL)),
       column(3,
-             selectInput(inputId='disease', label = 'Disease', choices =c("Coronary Heart Disease")))
+             selectInput(inputId='disease', label = 'Disease', choices =c("Coronary Heart Disease"))),
+      column(3,
+             numericInput('pvalue', 'P-value', 0.05,min = 0, max = 1))
     ),
     fluidRow(
       column(3,actionButton("runif", "Run")),

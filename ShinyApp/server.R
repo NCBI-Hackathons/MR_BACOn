@@ -1,5 +1,5 @@
 source("plotFunctions.R")
-source("backend_functions.R")
+source("backend_functions_pvalue.R")
 
 server <- function(input, output,session) {
   library(ggplot2)
@@ -15,6 +15,7 @@ server <- function(input, output,session) {
     updateSelectInput(session = session, inputId = "metabolite", choices = choices_metabolites())
   })
   
+  
   dat_to_run <- reactiveValues(data = data.frame())
   
   observeEvent(input$runif, {
@@ -22,9 +23,10 @@ server <- function(input, output,session) {
     if (input$runif !=0){
       t = input$tissue
       m = input$metabolite
+      pval = input$pvalue
       #dat_ret <- perform_mr(t,"",m)
       output$text1 <- renderText({""})
-      dat_ret <- tryCatch(perform_mr(t,"",m),error=function(e){return(1)})
+      dat_ret <- tryCatch(perform_mr(t,pval,"",m),error=function(e){return(1)})
       if (dat_ret!=1){
         dat_to_run$data <- as.data.frame(dat_ret)
       }
