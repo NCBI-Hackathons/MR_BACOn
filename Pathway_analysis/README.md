@@ -8,7 +8,7 @@ Pathway analysis for MR BACOn.
 
 Provided by the [West Coast Metabolomics Center](http://metabolomics.ucdavis.edu/Downloads).
 
-### 2. Obtain the complete Metabolite xml file from the [Human Metabolome Database](http://www.hmdb.ca/downloads ).
+### 2. Obtain the complete metabolite xml file from the [Human Metabolome Database](http://www.hmdb.ca/downloads ).
 
 ### 3. Parse xml file, get pathway information.
 	 ./parse_pathways.pl
