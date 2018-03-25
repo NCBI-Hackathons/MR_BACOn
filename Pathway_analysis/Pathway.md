@@ -20,3 +20,5 @@ Provided by the [West Coast Metabolomics Center](http://metabolomics.ucdavis.edu
 	 get_metabolites_from_pathway.R
 
 ### 5. Run TwoSampleMR for metabolites returned from step 4.
+
+[How to run TwoSampleMR](https://github.com/NCBI-Hackathons/MR_BACOn/blob/master/RuningMR/MR_Readme.md)
