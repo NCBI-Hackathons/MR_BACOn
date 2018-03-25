@@ -7,16 +7,17 @@
 
 <h2>Usage:</h2>
 
-   [**R Shiny app User Manual**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/ShinyApp/README.md)
+   [**R Shiny app User Manual**](./ShinyApp/README.md)
    
 <h3>Back-end workflow</h3>
 
-   [**Data acquisition and filtering**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/DataCleaningScripts/Data_cleaning_workflow.md)
+   [**Data acquisition and filtering**](./DataCleaningScripts/Data_cleaning_workflow.md)
 
-   [**LD pruning**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/LDpruning/pruning.md)
+   [**LD pruning**](./LDpruning/pruning.md)
 
-   [**Mendelian Randomization**](https://github.com/NCBI-Hackathons/metaboliteassoc/blob/master/RuningMR/MR_Readme.md)
+   [**Mendelian Randomization**](./RuningMR/MR_Readme.md)
 
+   [**Pathway analysis**](./Pathway_analysis/Pathway.md)
 
 <h2>What is MR?</h2>
 
