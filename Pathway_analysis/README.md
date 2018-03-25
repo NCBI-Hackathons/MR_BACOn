@@ -18,3 +18,5 @@ Provided by the [West Coast Metabolomics Center](http://metabolomics.ucdavis.edu
 ### 5. Run TwoSampleMR for each metabolite returned from step 4.
 
 [How to run TwoSampleMR](https://github.com/NCBI-Hackathons/MR_BACOn/blob/master/RuningMR/MR_Readme.md)
+
+### 6. Calcualte average association score for each pathway, get top ranked pathways.
