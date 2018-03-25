@@ -16,8 +16,9 @@ $xmlfile = $ARGV[0];
 $tempfile = $xmlfile;
 $tempfile =~ s/.xml//g;
 $outfile = 'Pathways_'.$tempfile.'.txt';
-$tempfile = 'temp_'.$tempfile.'.txt';
 $IDlist = 'SecondaryID_'.$tempfile.'.txt';
+$tempfile = 'temp_'.$tempfile.'.txt';
+
 
 `./nested_xml_parser.py $xmlfile > $tempfile`;
 
@@ -40,7 +41,7 @@ while (!eof($readfh)) {
 }
 close $readfh;
 
-#system("rm","$tempfile");
+system("rm","$tempfile");
 
 open $outfh,'>',$outfile or die "$!";
 
