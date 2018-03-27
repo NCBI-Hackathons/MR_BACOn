@@ -3,7 +3,7 @@
 
 <h2>A Shiny application for Mendelian Randomization analysis of Biomarker Associations for Causality with Outcomes</h2>
 
-![Workflow](workflow.png)
+![Workflow](./image/workflow.png)
 
 <h2>Usage:</h2>
 
