@@ -33,7 +33,7 @@ perform_mr <- function(tissue, pvalue, dataset, metid) {
   expos_data <- expos_data[expos_data$id.exposure == metabo,]
   
   #Subset data by user provided p-value
-  expos_data <- expos_data[expos_data$pval < pvalue,]
+  expos_data <- expos_data[expos_data$pval.exposure < pvalue,]
   expos_data <- clump_data(expos_data, clump_kb = 1000, clump_r2 = 0.8, clump_p1 = 1, clump_p2 = 1)
   
   #Read in disease GWAS 
