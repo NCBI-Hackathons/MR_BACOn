@@ -11,7 +11,7 @@ Provided by the [West Coast Metabolomics Center](http://metabolomics.ucdavis.edu
 ### 2. Obtain the complete metabolite xml file from the [Human Metabolome Database](http://www.hmdb.ca/downloads ).
 
 ### 3. Parse xml file, get pathway information.
-	 ./parse_pathways.pl
+	 ./parse_pathways.pl xmlfile.xml
 ### 4. Get a list of metabolites that are in the same pathways as the user-defined metabolite-of-interest.
 	 get_metabolites_from_pathway.R
 
