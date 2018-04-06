@@ -15,11 +15,9 @@ server <- function(input, output,session) {
     updateSelectInput(session = session, inputId = "metabolite", choices = choices_metabolites())
   })
   
-  
   dat_to_run <- reactiveValues(data = data.frame())
   
   observeEvent(input$runif, {
-    #met = get_metabolite(input$metabolite,input$tissue)
     if (input$runif !=0){
       t = input$tissue
       m = input$metabolite

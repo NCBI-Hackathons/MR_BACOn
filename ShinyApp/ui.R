@@ -44,9 +44,9 @@ fluidPage(theme="simplex.min.css",
             # Button
             column(6,tags$h1(textOutput("text1")))
           ),
-          fluidRow(
-            column(6,tags$h3("Output"))
-          ),
+          #fluidRow(
+          #  column(6,tags$h3(textOutput("outputTitle")))
+          #),
           fluidRow(
             column(6,tags$h3("MR Tests")),
             column(6,tags$h3("Funnel Plot"))
