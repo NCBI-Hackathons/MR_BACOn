@@ -21,32 +21,42 @@ renderInputs <- function() {
 }
 
 # Define UI for application 
-fluidPage(theme="simplex.min.css",
-          tags$style(type="text/css",
-                     "label {font-size: 12px;}",
-                     ".recalculating {opacity: 1.0;}"
-          ),
+fluidPage(
+  theme="simplex.min.css",
+  tags$style(type="text/css","label {font-size: 12px;}",".recalculating {opacity: 1.0;}"),
+  # Application title
+  tags$h2("MR BACOn: Mendelian Randomization analysis of Biomarker Associations for Causality with Outcomes"),
+  p("Find causal associations between your metabolite of interest and disease."),
+  hr(),
           
-          # Application title
-          tags$h2("MR BACOn: Mendelian Randomization analysis of Biomarker Associations for Causality with Outcomes"),
-          #img(src="pig-face.png", width = "50px", height = "50px"),
-          p("Find causal associations between your metabolite of interest and disease."),
-          hr(),
-          
-          fluidRow(
-            column(6, tags$h3("Inputs"))
-            #column(6, tags$h3("Scenario B"))
-          ),
-          fluidRow(
-            renderInputs()
-          ),
-          fluidRow(
-            # Button
-            column(6,tags$h1(textOutput("text1")))
-          ),
-          #fluidRow(
-          #  column(6,tags$h3(textOutput("outputTitle")))
-          #),
+  # This is all the input 
+    fluidRow(
+      column(6, tags$h3("Inputs"))
+    ),
+    fluidRow(
+    renderInputs()
+    ),
+    
+    conditionalPanel(
+      condition = "input.runif && !input.reset && output.renderUIForNoAssoc != 'noassoc' 
+      && output.renderUIForOutput != 'show'",
+      fluidRow(
+        column(6, tags$h3("Running Two-Sample MR ...."))
+      )
+    ),   
+  
+  conditionalPanel(
+    condition = "output.renderUIForNoAssoc=='noassoc'",
+    fluidRow(
+      column(6, tags$h3("No Association Found"))
+    )
+  ),   
+    # This is all the outputs 
+    conditionalPanel(
+      condition = "output.renderUIForOutput == 'show'",
+      fluidRow(
+      column(6,tags$h3(textOutput("outputTitle")))
+      ),
           fluidRow(
             column(6,tags$h3("MR Tests")),
             column(6,tags$h3("Funnel Plot"))
@@ -85,4 +95,5 @@ fluidPage(theme="simplex.min.css",
             # Button
             downloadButton("downloadData", "Download Data")
           )
+      )
 )

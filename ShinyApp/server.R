@@ -1,44 +1,51 @@
 source("plotFunctions.R")
 source("backend_functions_pvalue.R")
+library(ggplot2)
 
 server <- function(input, output,session) {
-  library(ggplot2)
-  #bmi_file <- system.file("data/bmi.txt", package="TwoSampleMR")
-  #outcome_dat <- extract_outcome_data(snps=exposure_dat$SNP, outcomes=7)
-  #dat <- harmonise_data(exposure_dat, outcome_dat)
   
+  # This will get values for the drop down for metabolites based on the tissue selected
   choices_metabolites<- reactive({
     choices_metabolites <- get_drop_down_metabolites(input$tissue)
   })
   
+  # Update choice of metabolite
   observe({
     updateSelectInput(session = session, inputId = "metabolite", choices = choices_metabolites())
   })
   
+  # This data table will be filled only when Run button is clicked
   dat_to_run <- reactiveValues(data = data.frame())
   
-  observeEvent(input$runif, {
-    if (input$runif !=0){
-      t = input$tissue
-      m = input$metabolite
-      pval = input$pvalue
-      #dat_ret <- perform_mr(t,"",m)
+  # We observe if Run button is clicked
+  observeEvent(input$runif, 
+    { # If the run button is clicked
+      if (input$runif !=0){
       output$text1 <- renderText({""})
-      dat_ret <- tryCatch(perform_mr(t,pval,"",m),error=function(e){return(1)})
+      dat_ret <- tryCatch(perform_mr(input$tissue,input$pvalue,"",input$metabolite),error=function(e){return(1)})
       if (dat_ret!=1){
         dat_to_run$data <- as.data.frame(dat_ret)
+        output$renderUIForOutput <- reactive({'show'})
+        outputOptions(output, 'renderUIForOutput', suspendWhenHidden=FALSE)
       }
       else{
         dat_to_run$data <- data.frame()
-        output$text1 <- renderText({"No association found"})
+        output$renderUIForNoAssoc <- reactive({'noassoc'})
+        outputOptions(output, 'renderUIForNoAssoc', suspendWhenHidden=FALSE)
       }
     }
     else{
       return()
     }
   })
+  
+  
   observeEvent(input$reset, {
     dat_to_run$data <- data.frame()
+    output$renderUIForNoAssoc <- reactive({'dontshow'})
+    outputOptions(output, 'renderUIForNoAssoc', suspendWhenHidden=FALSE)
+    output$renderUIForOutput <- reactive({'dontshow'})
+    outputOptions(output, 'renderUIForOutput', suspendWhenHidden=FALSE)
   })  
   
   output$forestPlot <- renderPlot({
