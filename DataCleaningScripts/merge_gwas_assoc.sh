@@ -6,16 +6,18 @@
 # NCBIHackathon 03/12/2018
 # Yue Hao
 
+#cd /into/the/data/directory
 for file in *.out
 do 
-    metab=${file:0:6} 
+    metab=${file:0:6} # extract metabolite id from file name
+    #create temp files, add metabolite id at the end of each row
     paste $file <(yes $metab | head -n $(cat $file | wc -l)) > $metab.new 
 done
 
 for newfile in *.new
 do
-    echo -e "$(sed '1d' $newfile)"> $newfile
+    echo -e "$(sed '1d' $newfile)"> $newfile # remove headline new files
 done
 
-cat *.new > merged_file.txt
-rm *.new
+cat *.new > merged_file.txt #merge file
+rm *.new #remove temp files
