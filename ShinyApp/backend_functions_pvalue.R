@@ -28,22 +28,10 @@ perform_mr <- function(tissue, pvalue, dataset, metid) {
   path <- "data/mr_data/"
   metabo <- get_metabolite(metid, tissue) #this gets the id from metabolite name
   expos_data <- read_exposure_data(filename = paste(path,tissue,".txt", sep=""), id_col = "metID", sep = "\t")
-  
-  #Get metabolite of interest
   expos_data <- expos_data[expos_data$id.exposure == metabo,]
-  
-  #Subset data by user provided p-value
-  #expos_data <- expos_data[expos_data$pval.exposure < pvalue,]
-  print("Here before clumping")
+  expos_data <- expos_data[expos_data$pval < pvalue,]
   expos_data <- clump_data(expos_data, clump_kb = 1000, clump_r2 = 0.8, clump_p1 = 1, clump_p2 = 1)
-  print("Here after clumping")
-  #Read in disease GWAS 
   disease_outcome <- read_outcome_data(filename = paste(path,"cad.txt", sep=""), snps = expos_data$SNP, sep = "\t")
-  
-  #Subset data by user provided p-value
-  disease_outcome <- disease_outcome[disease_outcome$pval < pvalue,]
-  
-  #Harmonize data
   harmed_data <- harmonise_data(exposure_dat = expos_data, outcome_dat = disease_outcome)
   return(harmed_data)
 }

@@ -1,0 +1,10 @@
+name: shinyapp
+title:
+username:
+account: ncolaian
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 298839
+bundleId: 1268964
+url: https://ncolaian.shinyapps.io/shinyapp/
+when: 1521059678.10479

@@ -15,7 +15,4 @@ Mendelian randomization etc etc etc <br/>
 ### Current Outputs: 
 	Dataset that is the output of harmonisation between the two QTLs.
 ## References:
-	
 	[TwoSampleMR Package](https://github.com/MRCIEU/TwoSampleMR)
-	
-	https://mrcieu.github.io/TwoSampleMR/
