@@ -109,7 +109,7 @@ server <- function(input, output,session) {
   # Downloadable csv of selected dataset ----
   output$downloadData <- downloadHandler(
     filename = function() {
-      paste("HolderForData.csv", sep = "")
+      paste('HolderForData', '.csv', sep = '')
     },
     content = function(file) {
       write.csv(dat_to_run$data, file, row.names = FALSE)

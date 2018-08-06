@@ -35,13 +35,17 @@ perform_mr <- function(tissue, pvalue, dataset, metid) {
   #Subset data by user provided p-value
   #expos_data <- expos_data[expos_data$pval.exposure < pvalue,]
   print("Here before clumping")
+  print(paste("expos_data n row:",dim(expos_data)[1]))
   expos_data <- clump_data(expos_data, clump_kb = 1000, clump_r2 = 0.8, clump_p1 = 1, clump_p2 = 1)
   print("Here after clumping")
+  print(paste("expos_data post clump n row:",dim(expos_data)[1]))
   #Read in disease GWAS 
   disease_outcome <- read_outcome_data(filename = paste(path,"cad.txt", sep=""), snps = expos_data$SNP, sep = "\t")
   
   #Subset data by user provided p-value
-  disease_outcome <- disease_outcome[disease_outcome$pval < pvalue,]
+  print(head(disease_outcome))
+  disease_outcome <- disease_outcome[disease_outcome$pval.outcome < pvalue,]
+  print(paste("disease_outcome n snp:",dim(disease_outcome)[1]))
   
   #Harmonize data
   harmed_data <- harmonise_data(exposure_dat = expos_data, outcome_dat = disease_outcome)
@@ -55,7 +59,7 @@ perform_metab_pathway_data <- function(metab_list, tiss, dataset) {
   names(metab_list) <- c("fp_4/4", "fp_3/4", "fp_1/4")
   percents <- c()
   for ( i in metab_list) {
-    print(i)
+    print(paste("path metabs",i))
     passed <- 0
     run <- 0
     for ( j in i ) {
