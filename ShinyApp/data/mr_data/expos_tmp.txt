@@ -1,0 +1,1 @@
+SNP	beta	se	eaf	effect_allele	other_allele	pval	metID
