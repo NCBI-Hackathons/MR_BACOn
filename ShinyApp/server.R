@@ -1,5 +1,5 @@
 source("plotFunctions.R")
-source("backend_functions_pvalue-cwc.R")
+source("backend_functions_pvalue-cwc-fast.R")
 library(ggplot2)
 
 server <- function(input, output,session) {
