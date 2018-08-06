@@ -1,0 +1,13 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs8083552	-0.0161	0.0036	0.3479	A	G	5.688e-06	M35305	TRUE	reported	Z8T0vf	textfile
+rs3993153	0.0197	0.0045	0.8085	T	G	9.918e-06	M35305	TRUE	reported	Z8T0vf	textfile
+rs7800039	-0.0169	0.0036	0.3424	A	G	2.13e-06	M35305	TRUE	reported	Z8T0vf	textfile
+rs1554690	0.0158	0.0035	0.5949	A	C	8.168e-06	M35305	TRUE	reported	Z8T0vf	textfile
+rs10019662	-0.0344	0.0075	0.441	A	G	5.213e-06	M35305	TRUE	reported	Z8T0vf	textfile
+rs2702042	-0.0157	0.0035	0.35	T	C	8.897e-06	M35305	TRUE	reported	Z8T0vf	textfile
+rs1507362	0.0333	0.0071	0.3901	T	C	3.019e-06	M35305	TRUE	reported	Z8T0vf	textfile
+rs12210574	-0.0167	0.0036	0.4836	T	C	3.057e-06	M35305	TRUE	reported	Z8T0vf	textfile
+rs4092160	0.0432	0.0092	0.837	A	G	2.891e-06	M35305	TRUE	reported	Z8T0vf	textfile
+rs1386540	-0.0361	0.0074	0.3484	T	C	1.137e-06	M35305	TRUE	reported	Z8T0vf	textfile
+rs10491073	0.1279	0.0267	0.0171	T	C	1.641e-06	M35305	TRUE	reported	Z8T0vf	textfile
+rs10415849	-0.024	0.0053	0.1248	T	C	5.785e-06	M35305	TRUE	reported	Z8T0vf	textfile

@@ -1,0 +1,16 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs1133034	0.032	0.0069	0.0757	T	C	3.906e-06	M00599	TRUE	reported	TUsltU	textfile
+rs4648464	-0.0161	0.0036	0.5522	A	G	9.373e-06	M00599	TRUE	reported	TUsltU	textfile
+rs3925033	-0.0164	0.0035	0.4591	T	G	2.593e-06	M00599	TRUE	reported	TUsltU	textfile
+rs10237319	0.0226	0.0051	0.1467	T	C	9.785e-06	M00599	TRUE	reported	TUsltU	textfile
+rs11259923	0.042	0.0091	0.8139	A	G	3.916e-06	M00599	TRUE	reported	TUsltU	textfile
+rs7136674	-0.0158	0.0035	0.5076	T	G	6.45e-06	M00599	TRUE	reported	TUsltU	textfile
+rs924483	-0.0289	0.0062	0.0916	A	G	3.254e-06	M00599	TRUE	reported	TUsltU	textfile
+rs10892074	0.0168	0.0035	0.4491	T	G	1.604e-06	M00599	TRUE	reported	TUsltU	textfile
+rs2964063	-0.0735	0.0155	0.9853	T	C	2.249e-06	M00599	TRUE	reported	TUsltU	textfile
+rs13195863	0.022	0.0044	0.2043	A	C	4.127e-07	M00599	TRUE	reported	TUsltU	textfile
+rs12515830	0.0244	0.0054	0.8744	T	G	5.788e-06	M00599	TRUE	reported	TUsltU	textfile
+rs11038739	-0.0203	0.0043	0.7937	A	T	3.009e-06	M00599	TRUE	reported	TUsltU	textfile
+rs6895278	0.0168	0.0037	0.3354	T	C	4.133e-06	M00599	TRUE	reported	TUsltU	textfile
+rs7941871	-0.024	0.005	0.8353	T	G	1.562e-06	M00599	TRUE	reported	TUsltU	textfile
+rs11216267	0.0168	0.0035	0.6435	T	C	1.56e-06	M00599	TRUE	reported	TUsltU	textfile

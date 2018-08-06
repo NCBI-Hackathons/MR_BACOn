@@ -1,0 +1,12 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs12731852	0.0447	0.0101	0.2589	T	C	9.504e-06	M33359	TRUE	reported	hSUDiQ	textfile
+rs2207775	0.0454	0.0091	0.5486	A	G	6.132e-07	M33359	TRUE	reported	hSUDiQ	textfile
+rs10509445	-0.0433	0.0091	0.5186	T	C	2.023e-06	M33359	TRUE	reported	hSUDiQ	textfile
+rs16942159	-0.207	0.0436	0.9725	T	C	2.083e-06	M33359	TRUE	reported	hSUDiQ	textfile
+rs730947	-0.0658	0.013	0.8606	A	C	4.2e-07	M33359	TRUE	reported	hSUDiQ	textfile
+rs11594256	-0.1101	0.0242	0.0335	A	T	5.339e-06	M33359	TRUE	reported	hSUDiQ	textfile
+rs6938176	0.0842	0.0188	0.4494	A	G	7.447e-06	M33359	TRUE	reported	hSUDiQ	textfile
+rs10000111	0.2505	0.0558	0.0351	A	G	7.123e-06	M33359	TRUE	reported	hSUDiQ	textfile
+rs2792707	0.0984	0.0216	0.0427	T	C	5.102e-06	M33359	TRUE	reported	hSUDiQ	textfile
+rs1681529	0.4453	0.0799	0.0182	A	G	2.489e-08	M33359	TRUE	reported	hSUDiQ	textfile
+rs7799018	-0.0433	0.009	0.427	T	C	1.621e-06	M33359	TRUE	reported	hSUDiQ	textfile

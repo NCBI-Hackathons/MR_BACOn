@@ -1,0 +1,5 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs6089828	-0.0165	0.0036	0.6506	T	C	5.861e-06	M38150	TRUE	reported	OEBUR2	textfile
+rs749902	0.0168	0.0037	0.3362	T	C	4.611e-06	M38150	TRUE	reported	OEBUR2	textfile
+rs4656083	0.0345	0.0068	0.4386	A	G	4.091e-07	M38150	TRUE	reported	OEBUR2	textfile
+rs2672893	-0.0218	0.0047	0.1652	A	G	4.353e-06	M38150	TRUE	reported	OEBUR2	textfile

@@ -1,0 +1,9 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs4905425	0.0377	0.0075	0.5066	A	C	5.715e-07	M18357	TRUE	reported	ORxi3v	textfile
+rs17092360	-0.0671	0.0143	0.9096	A	G	2.61e-06	M18357	TRUE	reported	ORxi3v	textfile
+rs7697449	0.0383	0.0085	0.5636	T	C	6.18e-06	M18357	TRUE	reported	ORxi3v	textfile
+rs3819727	0.0516	0.0114	0.1706	T	G	5.466e-06	M18357	TRUE	reported	ORxi3v	textfile
+rs17498524	0.0422	0.0095	0.7903	T	C	9.646e-06	M18357	TRUE	reported	ORxi3v	textfile
+rs3846242	0.0383	0.0086	0.5792	T	C	8.042e-06	M18357	TRUE	reported	ORxi3v	textfile
+rs7349940	-0.0611	0.0132	0.1269	A	T	3.594e-06	M18357	TRUE	reported	ORxi3v	textfile
+rs1772858	-0.0341	0.0076	0.6211	A	G	7.984e-06	M18357	TRUE	reported	ORxi3v	textfile

@@ -1,0 +1,17 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs7588177	0.0479	0.0107	0.5744	T	C	8.112e-06	M01640	TRUE	reported	auO3ce	textfile
+rs6826474	-0.1383	0.0288	0.0393	T	C	1.561e-06	M01640	TRUE	reported	auO3ce	textfile
+rs2070006	0.0512	0.0112	0.3713	T	C	4.762e-06	M01640	TRUE	reported	auO3ce	textfile
+rs577596	-0.0567	0.0114	0.3267	A	G	6.679e-07	M01640	TRUE	reported	auO3ce	textfile
+rs8057559	0.1395	0.0314	0.0312	T	C	9.098e-06	M01640	TRUE	reported	auO3ce	textfile
+rs13103690	-0.0474	0.0104	0.5359	T	G	5.195e-06	M01640	TRUE	reported	auO3ce	textfile
+rs9419004	-0.254	0.0563	0.186	C	G	6.531e-06	M01640	TRUE	reported	auO3ce	textfile
+rs13069990	-0.0506	0.011	0.3781	T	C	4.442e-06	M01640	TRUE	reported	auO3ce	textfile
+rs6713914	0.0593	0.0116	0.5741	T	C	3.22e-07	M01640	TRUE	reported	auO3ce	textfile
+rs11167905	0.0804	0.0164	0.8545	T	C	9.826e-07	M01640	TRUE	reported	auO3ce	textfile
+rs808686	0.0598	0.0128	0.6086	A	G	3.013e-06	M01640	TRUE	reported	auO3ce	textfile
+rs7712761	-0.0776	0.016	0.1204	A	G	1.254e-06	M01640	TRUE	reported	auO3ce	textfile
+rs8105491	-0.0698	0.0148	0.154	T	G	2.304e-06	M01640	TRUE	reported	auO3ce	textfile
+rs7112460	0.1084	0.0223	0.0658	T	C	1.135e-06	M01640	TRUE	reported	auO3ce	textfile
+rs6834631	0.1306	0.0267	0.9596	T	G	1.032e-06	M01640	TRUE	reported	auO3ce	textfile
+rs9606290	0.159	0.0352	0.241	A	G	6.316e-06	M01640	TRUE	reported	auO3ce	textfile

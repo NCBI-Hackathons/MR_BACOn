@@ -1,0 +1,17 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs3024298	0.0729	0.0159	0.9784	A	C	4.319e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs2128076	-0.1635	0.0361	0.0163	C	G	5.881e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs1165189	-0.0254	0.0053	0.7496	A	C	1.456e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs2776982	0.0447	0.0097	0.053	A	C	4.522e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs9398661	-0.0613	0.0128	0.0356	T	C	1.575e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs902092	-0.0642	0.0145	0.1236	A	G	9.421e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs10977422	-0.0271	0.0061	0.8653	A	G	9.63e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs11154157	0.0201	0.0045	0.676	T	C	6.232e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs10166510	-0.0211	0.0044	0.6837	A	G	2.055e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs7132958	-0.0236	0.0053	0.8008	A	G	9.54e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs1383950	0.1548	0.0332	0.9813	T	C	3.126e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs9375094	-0.0678	0.014	0.0286	T	C	1.277e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs2623693	-0.1622	0.0364	0.0172	A	T	8.432e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs7134360	-0.0211	0.0044	0.6473	A	G	2.014e-06	M33638	TRUE	reported	lp0ERA	textfile
+rs4655028	0.0252	0.0052	0.4964	C	G	9.598e-07	M33638	TRUE	reported	lp0ERA	textfile
+rs10861380	-0.0214	0.0045	0.7004	A	G	1.592e-06	M33638	TRUE	reported	lp0ERA	textfile

@@ -1,0 +1,13 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs10074013	0.0424	0.0085	0.2515	A	G	5.48e-07	M33658	TRUE	reported	9NHuND	textfile
+rs11863419	0.0842	0.019	0.0596	T	C	9.538e-06	M33658	TRUE	reported	9NHuND	textfile
+rs17152193	0.0362	0.0077	0.3284	T	C	2.435e-06	M33658	TRUE	reported	9NHuND	textfile
+rs6502323	0.0434	0.0083	0.2996	A	T	1.559e-07	M33658	TRUE	reported	9NHuND	textfile
+rs11046265	-0.0431	0.0092	0.2995	T	C	2.533e-06	M33658	TRUE	reported	9NHuND	textfile
+rs9968605	0.0422	0.0093	0.1854	A	G	6.008e-06	M33658	TRUE	reported	9NHuND	textfile
+rs1892513	-0.0346	0.0074	0.5107	A	G	3.181e-06	M33658	TRUE	reported	9NHuND	textfile
+rs4437239	-0.0378	0.0085	0.7829	T	C	9.783e-06	M33658	TRUE	reported	9NHuND	textfile
+rs13146757	0.1467	0.03	0.0199	T	C	1.02e-06	M33658	TRUE	reported	9NHuND	textfile
+rs7956425	-0.093	0.0191	0.8522	A	G	1.207e-06	M33658	TRUE	reported	9NHuND	textfile
+rs17358216	0.1099	0.0233	0.0313	T	C	2.356e-06	M33658	TRUE	reported	9NHuND	textfile
+rs10779577	0.0427	0.0093	0.209	A	G	4.074e-06	M33658	TRUE	reported	9NHuND	textfile

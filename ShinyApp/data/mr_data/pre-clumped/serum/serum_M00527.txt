@@ -1,0 +1,14 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs2242578	-0.0111	0.0024	0.6704	C	G	5.078e-06	M00527	TRUE	reported	NX5rE7	textfile
+rs4635489	0.0364	0.008	0.0177	A	G	5.663e-06	M00527	TRUE	reported	NX5rE7	textfile
+rs16937124	-0.021	0.0046	0.9471	A	C	5.622e-06	M00527	TRUE	reported	NX5rE7	textfile
+rs780093	0.0117	0.0023	0.4	T	C	1.887e-07	M00527	TRUE	reported	NX5rE7	textfile
+rs4718532	-0.016	0.0035	0.5052	T	C	6.605e-06	M00527	TRUE	reported	NX5rE7	textfile
+rs3785024	-0.0223	0.0049	0.9469	A	G	5.562e-06	M00527	TRUE	reported	NX5rE7	textfile
+rs1876100	-0.0106	0.0024	0.2626	A	T	9.204e-06	M00527	TRUE	reported	NX5rE7	textfile
+rs2000812	0.0111	0.0025	0.8223	T	C	9.7e-06	M00527	TRUE	reported	NX5rE7	textfile
+rs1193345	-0.0216	0.0045	0.9357	A	G	1.434e-06	M00527	TRUE	reported	NX5rE7	textfile
+rs1330523	-0.0117	0.0024	0.2326	A	G	1.561e-06	M00527	TRUE	reported	NX5rE7	textfile
+rs10788232	-0.0111	0.0024	0.6825	T	C	2.464e-06	M00527	TRUE	reported	NX5rE7	textfile
+rs723526	-0.011	0.0024	0.1994	A	G	6.624e-06	M00527	TRUE	reported	NX5rE7	textfile
+rs13403441	-0.0235	0.0048	0.8588	A	T	1.019e-06	M00527	TRUE	reported	NX5rE7	textfile

@@ -1,0 +1,17 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs12640478	-0.0204	0.0042	0.413	C	G	1.463e-06	M34469	TRUE	reported	kyGNxs	textfile
+rs1489179	0.0254	0.0056	0.1963	C	G	4.567e-06	M34469	TRUE	reported	kyGNxs	textfile
+rs12423733	-0.0379	0.0081	0.0749	T	C	2.648e-06	M34469	TRUE	reported	kyGNxs	textfile
+rs4630827	0.0226	0.005	0.201	T	C	7.344e-06	M34469	TRUE	reported	kyGNxs	textfile
+rs10756216	0.0268	0.005	0.2358	T	C	6.627e-08	M34469	TRUE	reported	kyGNxs	textfile
+rs12810144	0.0754	0.0162	0.079	T	C	3.35e-06	M34469	TRUE	reported	kyGNxs	textfile
+rs8086010	-0.0192	0.0042	0.6663	A	C	5.483e-06	M34469	TRUE	reported	kyGNxs	textfile
+rs1235385	0.0257	0.0057	0.167	T	C	5.661e-06	M34469	TRUE	reported	kyGNxs	textfile
+rs1489177	-0.0248	0.0049	0.769	T	C	4.372e-07	M34469	TRUE	reported	kyGNxs	textfile
+rs1195892	-0.0188	0.0042	0.5662	T	C	6.155e-06	M34469	TRUE	reported	kyGNxs	textfile
+rs10756226	-0.0267	0.0051	0.8006	A	G	1.424e-07	M34469	TRUE	reported	kyGNxs	textfile
+rs12580426	0.0431	0.0083	0.9345	A	G	2.201e-07	M34469	TRUE	reported	kyGNxs	textfile
+rs9635567	0.0227	0.005	0.7787	T	C	5.733e-06	M34469	TRUE	reported	kyGNxs	textfile
+rs10275746	0.0191	0.0042	0.4335	T	C	4.946e-06	M34469	TRUE	reported	kyGNxs	textfile
+rs133565	-0.0189	0.0042	0.3318	A	G	8.513e-06	M34469	TRUE	reported	kyGNxs	textfile
+rs11905798	-0.0997	0.0212	0.0405	A	G	2.498e-06	M34469	TRUE	reported	kyGNxs	textfile

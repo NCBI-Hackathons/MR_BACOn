@@ -1,0 +1,16 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs2274629	0.0333	0.0071	0.2873	A	G	3.013e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs4957655	0.0432	0.0098	0.1233	T	C	9.644e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs2327511	0.035	0.0075	0.2333	A	T	3.441e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs10799701	0.0308	0.0066	0.435	A	G	2.693e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs4699296	0.0483	0.0106	0.1693	A	G	4.779e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs12206258	-0.0317	0.0071	0.6865	T	C	8.636e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs388600	0.0448	0.0097	0.868	A	C	3.998e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs1697421	-0.0299	0.0064	0.5205	T	C	2.842e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs11933242	-0.0341	0.0075	0.3129	A	G	5.314e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs13105073	-0.1258	0.0281	0.9776	A	T	7.427e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs16828992	-0.0687	0.0154	0.0715	A	C	8.213e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs10495052	-0.0872	0.0186	0.9683	A	G	2.768e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs6879079	-0.0388	0.0087	0.8273	T	G	7.528e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs11564552	0.0303	0.0066	0.4808	A	G	3.871e-06	M31548	TRUE	reported	lN0K6V	textfile
+rs4957657	0.0482	0.0105	0.1104	T	C	4.531e-06	M31548	TRUE	reported	lN0K6V	textfile

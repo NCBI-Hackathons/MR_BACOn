@@ -1,0 +1,15 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs6975921	0.0343	0.0071	0.9095	A	G	1.246e-06	M01493	TRUE	reported	hqIBwv	textfile
+rs2351725	-0.0119	0.0026	0.7947	A	T	5.841e-06	M01493	TRUE	reported	hqIBwv	textfile
+rs2065620	0.0116	0.0025	0.269	A	G	4.034e-06	M01493	TRUE	reported	hqIBwv	textfile
+rs12300345	-0.0151	0.0034	0.132	A	T	7.452e-06	M01493	TRUE	reported	hqIBwv	textfile
+rs10497426	0.012	0.0026	0.8064	T	C	4.466e-06	M01493	TRUE	reported	hqIBwv	textfile
+rs4812400	0.0178	0.0039	0.9092	A	T	4.893e-06	M01493	TRUE	reported	hqIBwv	textfile
+rs11701867	-0.0136	0.0027	0.1761	A	C	2.753e-07	M01493	TRUE	reported	hqIBwv	textfile
+rs13424082	-0.0125	0.0026	0.1735	A	G	1.799e-06	M01493	TRUE	reported	hqIBwv	textfile
+rs1192521	-0.0163	0.0031	0.7755	A	T	1.402e-07	M01493	TRUE	reported	hqIBwv	textfile
+rs874431	0.0125	0.0025	0.3048	A	G	3.452e-07	M01493	TRUE	reported	hqIBwv	textfile
+rs10900040	-0.0144	0.0031	0.8351	T	C	3.401e-06	M01493	TRUE	reported	hqIBwv	textfile
+rs10945970	-0.011	0.0025	0.3103	T	C	7.379e-06	M01493	TRUE	reported	hqIBwv	textfile
+rs10187146	-0.017	0.0036	0.1029	A	G	2.638e-06	M01493	TRUE	reported	hqIBwv	textfile
+rs4764034	-0.011	0.0024	0.6869	A	G	7.669e-06	M01493	TRUE	reported	hqIBwv	textfile

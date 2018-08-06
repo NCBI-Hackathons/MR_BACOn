@@ -1,0 +1,5 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs2456584	-0.0179	0.0037	0.5393	A	G	1.635e-06	M00577	TRUE	reported	dPrmJe	textfile
+rs661454	0.0317	0.0065	0.0848	A	G	1.313e-06	M00577	TRUE	reported	dPrmJe	textfile
+rs4663119	0.0331	0.0074	0.0773	A	G	7.324e-06	M00577	TRUE	reported	dPrmJe	textfile
+rs11648366	-0.0285	0.0063	0.9049	A	G	6.975e-06	M00577	TRUE	reported	dPrmJe	textfile

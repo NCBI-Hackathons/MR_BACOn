@@ -1,0 +1,16 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs4880258	0.0116	0.0026	0.5413	A	G	8.154e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs3094476	0.0114	0.0026	0.5002	A	G	7.853e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs535902	0.0252	0.0056	0.9346	A	G	7.886e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs764428	-0.0133	0.0026	0.6245	T	C	2.46e-07	M19368	TRUE	reported	ELMuqq	textfile
+rs2467042	-0.0186	0.0042	0.8651	T	G	7.84e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs2277324	0.0115	0.0026	0.4138	A	G	8.957e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs4778640	0.04	0.0083	0.9704	A	G	1.388e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs4344410	0.0119	0.0026	0.503	A	C	3.515e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs606114	-0.0164	0.0034	0.1601	T	C	1.481e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs9494155	0.0123	0.0026	0.5988	A	C	1.994e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs2823491	0.038	0.0083	0.9047	T	C	5.272e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs3112726	0.0122	0.0026	0.455	T	C	2.933e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs226783	0.0191	0.0041	0.5292	C	G	3.845e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs2826649	-0.0115	0.0026	0.3649	T	G	8.562e-06	M19368	TRUE	reported	ELMuqq	textfile
+rs2263487	-0.0119	0.0025	0.5184	T	C	3.047e-06	M19368	TRUE	reported	ELMuqq	textfile

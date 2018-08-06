@@ -1,0 +1,8 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs2874702	-0.0496	0.0096	0.4189	T	C	2.471e-07	M36376	TRUE	reported	q79FLL	textfile
+rs2174099	0.0471	0.01	0.1469	C	G	2.601e-06	M36376	TRUE	reported	q79FLL	textfile
+rs1893285	-0.0331	0.0072	0.5927	A	G	4.81e-06	M36376	TRUE	reported	q79FLL	textfile
+rs1320227	-0.0421	0.0085	0.1906	A	C	8.532e-07	M36376	TRUE	reported	q79FLL	textfile
+rs1914837	-0.047	0.0098	0.2578	T	G	1.76e-06	M36376	TRUE	reported	q79FLL	textfile
+rs1192458	0.034	0.0071	0.6223	A	G	1.891e-06	M36376	TRUE	reported	q79FLL	textfile
+rs7021014	0.0334	0.0074	0.7224	T	G	6.594e-06	M36376	TRUE	reported	q79FLL	textfile

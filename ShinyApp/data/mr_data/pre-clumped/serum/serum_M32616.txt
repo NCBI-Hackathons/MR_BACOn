@@ -1,0 +1,13 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs1322374	-0.0455	0.0103	0.7628	A	G	9.722e-06	M32616	TRUE	reported	TKnHMl	textfile
+rs7997078	-0.054	0.0121	0.388	A	G	8.522e-06	M32616	TRUE	reported	TKnHMl	textfile
+rs8130944	-0.0439	0.0098	0.3688	A	G	7.843e-06	M32616	TRUE	reported	TKnHMl	textfile
+rs500421	0.0736	0.0165	0.9177	C	G	8.231e-06	M32616	TRUE	reported	TKnHMl	textfile
+rs2104340	0.0617	0.013	0.2526	C	G	2.163e-06	M32616	TRUE	reported	TKnHMl	textfile
+rs1823803	-0.0427	0.0088	0.4614	T	C	1.219e-06	M32616	TRUE	reported	TKnHMl	textfile
+rs7847689	0.0438	0.0094	0.7003	T	C	3.436e-06	M32616	TRUE	reported	TKnHMl	textfile
+rs2402228	-0.051	0.0112	0.1901	A	T	5.266e-06	M32616	TRUE	reported	TKnHMl	textfile
+rs4149056	-0.0537	0.0116	0.8373	T	C	3.998e-06	M32616	TRUE	reported	TKnHMl	textfile
+rs10836109	0.086	0.0181	0.0682	C	G	1.944e-06	M32616	TRUE	reported	TKnHMl	textfile
+rs6453786	-0.0471	0.0102	0.2993	T	G	3.869e-06	M32616	TRUE	reported	TKnHMl	textfile
+rs6879662	-0.0385	0.0087	0.4073	T	C	9.266e-06	M32616	TRUE	reported	TKnHMl	textfile

@@ -1,0 +1,14 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs17057690	0.0831	0.0142	0.0555	T	C	5.001e-09	M32800	TRUE	reported	AyYiUK	textfile
+rs9897258	-0.0463	0.0102	0.8542	T	C	6.072e-06	M32800	TRUE	reported	AyYiUK	textfile
+rs6993325	-0.0315	0.0071	0.2645	T	C	8.927e-06	M32800	TRUE	reported	AyYiUK	textfile
+rs7305915	-0.0307	0.0063	0.3824	A	G	9.847e-07	M32800	TRUE	reported	AyYiUK	textfile
+rs7299188	-0.0371	0.0082	0.6604	C	G	6.526e-06	M32800	TRUE	reported	AyYiUK	textfile
+rs4698297	0.1878	0.0417	0.0364	A	C	6.527e-06	M32800	TRUE	reported	AyYiUK	textfile
+rs1025573	0.0558	0.0114	0.0859	T	C	9.517e-07	M32800	TRUE	reported	AyYiUK	textfile
+rs4437633	-0.065	0.0138	0.468	T	G	2.442e-06	M32800	TRUE	reported	AyYiUK	textfile
+rs11690780	0.051	0.0109	0.1054	C	G	3.099e-06	M32800	TRUE	reported	AyYiUK	textfile
+rs12000429	0.3394	0.0731	0.0143	A	G	3.486e-06	M32800	TRUE	reported	AyYiUK	textfile
+rs9953591	0.0681	0.0129	0.0705	A	T	1.403e-07	M32800	TRUE	reported	AyYiUK	textfile
+rs11736674	-0.1881	0.0416	0.9635	A	C	6.114e-06	M32800	TRUE	reported	AyYiUK	textfile
+rs4674860	-0.0284	0.0063	0.4516	T	C	5.736e-06	M32800	TRUE	reported	AyYiUK	textfile

@@ -1,0 +1,10 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs7359707	0.0235	0.0052	0.1937	A	T	5.415e-06	M19396	TRUE	reported	Y3gUyn	textfile
+rs3783200	-0.0414	0.0073	0.6859	A	C	1.514e-08	M19396	TRUE	reported	Y3gUyn	textfile
+rs4884317	-0.0211	0.0045	0.211	A	G	2.437e-06	M19396	TRUE	reported	Y3gUyn	textfile
+rs2100777	0.0349	0.0079	0.0558	A	C	9.977e-06	M19396	TRUE	reported	Y3gUyn	textfile
+rs4998531	0.0175	0.0037	0.7039	T	C	2.321e-06	M19396	TRUE	reported	Y3gUyn	textfile
+rs17739309	-0.0215	0.0046	0.845	A	G	2.287e-06	M19396	TRUE	reported	Y3gUyn	textfile
+rs9534319	-0.039	0.0072	0.6593	T	C	5.583e-08	M19396	TRUE	reported	Y3gUyn	textfile
+rs789736	0.019	0.0038	0.2464	T	G	4.026e-07	M19396	TRUE	reported	Y3gUyn	textfile
+rs12375763	0.0292	0.0065	0.9372	T	C	7.579e-06	M19396	TRUE	reported	Y3gUyn	textfile

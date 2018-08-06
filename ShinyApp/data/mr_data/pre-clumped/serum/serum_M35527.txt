@@ -1,0 +1,11 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs9580319	-0.0641	0.014	0.9296	T	C	4.438e-06	M35527	TRUE	reported	gWUfoA	textfile
+rs1948766	-0.037	0.0083	0.2853	T	G	8.254e-06	M35527	TRUE	reported	gWUfoA	textfile
+rs6550458	0.0331	0.0072	0.4991	A	T	4.284e-06	M35527	TRUE	reported	gWUfoA	textfile
+rs8054116	0.0352	0.008	0.4278	A	C	9.834e-06	M35527	TRUE	reported	gWUfoA	textfile
+rs12053454	-0.0393	0.0084	0.2932	T	C	2.76e-06	M35527	TRUE	reported	gWUfoA	textfile
+rs1551864	-0.038	0.0084	0.3052	T	C	5.902e-06	M35527	TRUE	reported	gWUfoA	textfile
+rs1439737	0.0368	0.0075	0.5832	T	C	1.079e-06	M35527	TRUE	reported	gWUfoA	textfile
+rs11932470	0.0361	0.0076	0.4287	A	G	2.418e-06	M35527	TRUE	reported	gWUfoA	textfile
+rs9417900	0.0385	0.0085	0.2502	T	C	6.25e-06	M35527	TRUE	reported	gWUfoA	textfile
+rs12422389	-0.0801	0.018	0.9413	T	C	8.588e-06	M35527	TRUE	reported	gWUfoA	textfile

@@ -1,0 +1,12 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs4862124	0.0348	0.0073	0.945	A	T	1.759e-06	M16818	TRUE	reported	uC87Oq	textfile
+rs3113185	-0.0175	0.0036	0.6254	T	C	9.501e-07	M16818	TRUE	reported	uC87Oq	textfile
+rs4268384	0.029	0.0064	0.0624	A	G	5.006e-06	M16818	TRUE	reported	uC87Oq	textfile
+rs4888946	-0.0161	0.0036	0.7754	A	T	8.78e-06	M16818	TRUE	reported	uC87Oq	textfile
+rs11597065	-0.018	0.0036	0.7513	T	C	5.272e-07	M16818	TRUE	reported	uC87Oq	textfile
+rs11047488	-0.044	0.0094	0.131	A	T	3.142e-06	M16818	TRUE	reported	uC87Oq	textfile
+rs10966194	0.0159	0.0036	0.7354	A	G	9.766e-06	M16818	TRUE	reported	uC87Oq	textfile
+rs11022215	0.0572	0.0126	0.9308	T	C	5.33e-06	M16818	TRUE	reported	uC87Oq	textfile
+rs12314479	0.0283	0.006	0.0853	C	G	2.761e-06	M16818	TRUE	reported	uC87Oq	textfile
+rs4332594	-0.0177	0.0036	0.246	T	C	1.109e-06	M16818	TRUE	reported	uC87Oq	textfile
+rs7084948	-0.0322	0.0067	0.067	T	C	1.536e-06	M16818	TRUE	reported	uC87Oq	textfile

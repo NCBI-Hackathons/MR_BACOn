@@ -1,0 +1,5 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs7790791	0.0594	0.013	0.0873	T	C	4.672e-06	M00575	TRUE	reported	NGgUAB	textfile
+rs12426131	0.0246	0.0051	0.1446	A	G	1.681e-06	M00575	TRUE	reported	NGgUAB	textfile
+rs33976862	0.0602	0.0135	0.0674	C	G	7.764e-06	M00575	TRUE	reported	NGgUAB	textfile
+rs491459	-0.025	0.0053	0.21	C	G	2.342e-06	M00575	TRUE	reported	NGgUAB	textfile

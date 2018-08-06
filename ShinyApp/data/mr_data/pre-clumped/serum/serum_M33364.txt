@@ -1,0 +1,11 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs2291502	-0.0258	0.0058	0.0926	T	C	8.698e-06	M33364	TRUE	reported	HSDEYE	textfile
+rs3791608	-0.0221	0.0049	0.1287	A	G	6.996e-06	M33364	TRUE	reported	HSDEYE	textfile
+rs11881687	-0.0273	0.0056	0.779	A	G	1.064e-06	M33364	TRUE	reported	HSDEYE	textfile
+rs12117697	0.0192	0.0042	0.7484	T	C	5.244e-06	M33364	TRUE	reported	HSDEYE	textfile
+rs17133359	-0.0403	0.0083	0.9531	A	G	1.07e-06	M33364	TRUE	reported	HSDEYE	textfile
+rs7432894	-0.0179	0.0037	0.6903	T	C	1.815e-06	M33364	TRUE	reported	HSDEYE	textfile
+rs6902872	0.0163	0.0036	0.6467	T	C	4.892e-06	M33364	TRUE	reported	HSDEYE	textfile
+rs12216313	-0.0429	0.0094	0.0351	A	T	5.488e-06	M33364	TRUE	reported	HSDEYE	textfile
+rs2062528	0.0175	0.0036	0.6616	C	G	9.192e-07	M33364	TRUE	reported	HSDEYE	textfile
+rs310104	-0.0558	0.0116	0.0428	T	C	1.516e-06	M33364	TRUE	reported	HSDEYE	textfile

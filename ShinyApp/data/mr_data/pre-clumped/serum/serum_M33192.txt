@@ -1,0 +1,15 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs11687942	-0.0484	0.0097	0.5576	T	G	6.025e-07	M33192	TRUE	reported	EDto8q	textfile
+rs1153452	-0.0616	0.0133	0.8392	T	C	3.619e-06	M33192	TRUE	reported	EDto8q	textfile
+rs6878813	0.0672	0.0143	0.1376	T	C	2.623e-06	M33192	TRUE	reported	EDto8q	textfile
+rs17068261	-0.1633	0.0359	0.9803	T	C	5.334e-06	M33192	TRUE	reported	EDto8q	textfile
+rs4894432	-0.0475	0.0105	0.7331	A	G	6.847e-06	M33192	TRUE	reported	EDto8q	textfile
+rs6718711	-0.0432	0.0097	0.3941	A	G	9.031e-06	M33192	TRUE	reported	EDto8q	textfile
+rs944495	-0.0906	0.0205	0.5131	T	C	9.762e-06	M33192	TRUE	reported	EDto8q	textfile
+rs13374698	0.1171	0.0265	0.0326	T	C	9.889e-06	M33192	TRUE	reported	EDto8q	textfile
+rs9892714	0.1324	0.0289	0.031	T	C	4.668e-06	M33192	TRUE	reported	EDto8q	textfile
+rs12529004	0.146	0.0318	0.9751	A	G	4.391e-06	M33192	TRUE	reported	EDto8q	textfile
+rs17054219	0.0829	0.0172	0.3934	A	C	1.542e-06	M33192	TRUE	reported	EDto8q	textfile
+rs6507387	-0.0469	0.0104	0.3592	T	C	7.062e-06	M33192	TRUE	reported	EDto8q	textfile
+rs10057846	0.0653	0.0147	0.1244	T	G	9.265e-06	M33192	TRUE	reported	EDto8q	textfile
+rs12339963	0.0789	0.0171	0.0852	C	G	3.707e-06	M33192	TRUE	reported	EDto8q	textfile

@@ -1,0 +1,2 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs807741	0.05466	0.0117095115681234	0.0899	T	G	3.161e-06	CNX0183	TRUE	reported	aLq8ya	textfile

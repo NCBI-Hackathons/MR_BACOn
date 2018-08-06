@@ -1,0 +1,8 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs2037458	0.0188	0.0035	0.6676	A	G	8.776e-08	M32322	TRUE	reported	5CHgMQ	textfile
+rs4149121	0.0158	0.0035	0.308	C	G	7.694e-06	M32322	TRUE	reported	5CHgMQ	textfile
+rs13128050	-0.0177	0.0036	0.2662	T	C	7.866e-07	M32322	TRUE	reported	5CHgMQ	textfile
+rs992534	0.0157	0.0035	0.4654	A	T	7.747e-06	M32322	TRUE	reported	5CHgMQ	textfile
+rs7299867	0.0171	0.0035	0.6329	T	G	1.013e-06	M32322	TRUE	reported	5CHgMQ	textfile
+rs10879778	-0.0181	0.0035	0.3441	T	C	2.589e-07	M32322	TRUE	reported	5CHgMQ	textfile
+rs7313577	-0.0164	0.0035	0.4242	C	G	2.218e-06	M32322	TRUE	reported	5CHgMQ	textfile

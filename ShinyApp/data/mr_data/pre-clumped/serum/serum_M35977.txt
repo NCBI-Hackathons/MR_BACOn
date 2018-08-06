@@ -1,0 +1,16 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs2068834	-0.0168	0.0037	0.7218	T	C	4.614e-06	M35977	TRUE	reported	inlz6Y	textfile
+rs9809098	-0.056	0.0114	0.0421	A	T	9.214e-07	M35977	TRUE	reported	inlz6Y	textfile
+rs6582090	-0.0168	0.0038	0.745	T	G	7.416e-06	M35977	TRUE	reported	inlz6Y	textfile
+rs1728918	0.0265	0.0054	0.3054	A	G	8.143e-07	M35977	TRUE	reported	inlz6Y	textfile
+rs12449543	0.016	0.0036	0.4462	T	C	8.248e-06	M35977	TRUE	reported	inlz6Y	textfile
+rs4719788	-0.0926	0.0202	0.0317	T	C	4.585e-06	M35977	TRUE	reported	inlz6Y	textfile
+rs10495762	-0.0246	0.0056	0.8934	A	G	9.497e-06	M35977	TRUE	reported	inlz6Y	textfile
+rs12547884	-0.0175	0.0039	0.7663	A	G	6.315e-06	M35977	TRUE	reported	inlz6Y	textfile
+rs9831949	-0.0693	0.0134	0.0277	T	G	2.382e-07	M35977	TRUE	reported	inlz6Y	textfile
+rs6707039	-0.0327	0.007	0.9354	A	G	2.983e-06	M35977	TRUE	reported	inlz6Y	textfile
+rs11053152	0.102	0.021	0.012	T	C	1.191e-06	M35977	TRUE	reported	inlz6Y	textfile
+rs161194	0.0232	0.0051	0.5606	C	G	5.083e-06	M35977	TRUE	reported	inlz6Y	textfile
+rs4567273	0.0251	0.0056	0.2608	A	C	8.97e-06	M35977	TRUE	reported	inlz6Y	textfile
+rs12623684	0.0334	0.0071	0.0629	A	G	2.592e-06	M35977	TRUE	reported	inlz6Y	textfile
+rs1260326	0.0171	0.0035	0.4113	T	C	1.335e-06	M35977	TRUE	reported	inlz6Y	textfile

@@ -1,0 +1,8 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs9635387	0.0324	0.0069	0.5273	A	G	2.717e-06	M33009	TRUE	reported	ZnaJDa	textfile
+rs7838814	-0.0764	0.0167	0.9497	T	G	4.853e-06	M33009	TRUE	reported	ZnaJDa	textfile
+rs11999484	0.0384	0.0085	0.8305	A	G	6.469e-06	M33009	TRUE	reported	ZnaJDa	textfile
+rs7100229	0.031	0.0066	0.4565	A	T	3.109e-06	M33009	TRUE	reported	ZnaJDa	textfile
+rs10192021	-0.0513	0.0114	0.0878	T	G	7.461e-06	M33009	TRUE	reported	ZnaJDa	textfile
+rs12630300	0.0711	0.0148	0.0603	T	C	1.654e-06	M33009	TRUE	reported	ZnaJDa	textfile
+rs8008553	0.0333	0.0072	0.7132	A	G	3.978e-06	M33009	TRUE	reported	ZnaJDa	textfile

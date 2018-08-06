@@ -1,0 +1,5 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs4861137	0.016	0.0036	0.6136	T	C	6.91e-06	M34732	TRUE	reported	XHzZbX	textfile
+rs6907935	-0.0172	0.0037	0.6945	T	C	3.811e-06	M34732	TRUE	reported	XHzZbX	textfile
+rs1456197	-0.0169	0.0038	0.5846	T	C	6.426e-06	M34732	TRUE	reported	XHzZbX	textfile
+rs4680092	-0.0169	0.0036	0.2203	T	G	2.193e-06	M34732	TRUE	reported	XHzZbX	textfile

@@ -1,0 +1,15 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs10136315	-0.0378	0.0079	0.5986	A	G	1.862e-06	M33864	TRUE	reported	dJBuJE	textfile
+rs391045	0.0453	0.01	0.4219	T	C	6.534e-06	M33864	TRUE	reported	dJBuJE	textfile
+rs4781436	0.2121	0.0478	0.0141	A	G	9.233e-06	M33864	TRUE	reported	dJBuJE	textfile
+rs6705902	-0.0377	0.0085	0.5897	A	G	8.226e-06	M33864	TRUE	reported	dJBuJE	textfile
+rs6925144	0.0527	0.0116	0.5429	T	C	5.762e-06	M33864	TRUE	reported	dJBuJE	textfile
+rs924931	-0.0353	0.0078	0.5401	T	C	6.139e-06	M33864	TRUE	reported	dJBuJE	textfile
+rs2789615	-0.047	0.0106	0.1728	A	G	8.919e-06	M33864	TRUE	reported	dJBuJE	textfile
+rs4947639	0.0561	0.0125	0.1513	T	G	6.694e-06	M33864	TRUE	reported	dJBuJE	textfile
+rs12986863	0.0404	0.0088	0.2858	T	C	5.011e-06	M33864	TRUE	reported	dJBuJE	textfile
+rs240841	0.035	0.0078	0.4835	A	T	6.449e-06	M33864	TRUE	reported	dJBuJE	textfile
+rs4952953	0.0407	0.009	0.2754	C	G	5.585e-06	M33864	TRUE	reported	dJBuJE	textfile
+rs1360605	0.1092	0.0234	0.9704	C	G	2.959e-06	M33864	TRUE	reported	dJBuJE	textfile
+rs12987632	0.0389	0.0079	0.3891	A	G	9.502e-07	M33864	TRUE	reported	dJBuJE	textfile
+rs10088108	-0.0465	0.0102	0.809	A	G	5.18e-06	M33864	TRUE	reported	dJBuJE	textfile

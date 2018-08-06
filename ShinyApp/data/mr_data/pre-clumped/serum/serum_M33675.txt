@@ -1,0 +1,11 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs12503398	-0.0307	0.0069	0.7238	A	G	8.679e-06	M33675	TRUE	reported	oFPNHe	textfile
+rs6003815	0.0243	0.0054	0.4411	T	C	6.582e-06	M33675	TRUE	reported	oFPNHe	textfile
+rs6764543	-0.0256	0.0054	0.4829	A	G	1.94e-06	M33675	TRUE	reported	oFPNHe	textfile
+rs11715075	-0.0283	0.0061	0.4149	T	C	3.555e-06	M33675	TRUE	reported	oFPNHe	textfile
+rs10743136	-0.0297	0.0061	0.6598	A	C	1.158e-06	M33675	TRUE	reported	oFPNHe	textfile
+rs4573623	-0.0535	0.0117	0.5476	T	C	4.692e-06	M33675	TRUE	reported	oFPNHe	textfile
+rs11681355	0.0275	0.0061	0.318	A	G	7.564e-06	M33675	TRUE	reported	oFPNHe	textfile
+rs10060182	-0.0274	0.0062	0.3009	A	G	9.445e-06	M33675	TRUE	reported	oFPNHe	textfile
+rs2957661	0.0308	0.0061	0.3698	T	C	4.342e-07	M33675	TRUE	reported	oFPNHe	textfile
+rs1428261	0.0285	0.0061	0.6371	T	C	3.246e-06	M33675	TRUE	reported	oFPNHe	textfile

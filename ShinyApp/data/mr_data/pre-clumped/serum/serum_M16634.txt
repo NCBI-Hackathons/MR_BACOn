@@ -1,0 +1,11 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs8061140	-0.0498	0.0112	0.9587	A	G	8.361e-06	M16634	TRUE	reported	wpPnLy	textfile
+rs12197075	0.0598	0.0134	0.9687	C	G	8.047e-06	M16634	TRUE	reported	wpPnLy	textfile
+rs11747325	-0.0228	0.0051	0.2853	T	C	6.45e-06	M16634	TRUE	reported	wpPnLy	textfile
+rs10415535	0.036	0.008	0.167	A	G	6.795e-06	M16634	TRUE	reported	wpPnLy	textfile
+rs12949918	-0.0201	0.0043	0.584	T	C	2.361e-06	M16634	TRUE	reported	wpPnLy	textfile
+rs9904521	0.0892	0.02	0.9525	A	G	7.934e-06	M16634	TRUE	reported	wpPnLy	textfile
+rs1598817	0.0541	0.012	0.9624	T	G	7.096e-06	M16634	TRUE	reported	wpPnLy	textfile
+rs7857624	0.0395	0.0087	0.9289	T	C	6.22e-06	M16634	TRUE	reported	wpPnLy	textfile
+rs16959796	0.058	0.013	0.951	T	C	8.137e-06	M16634	TRUE	reported	wpPnLy	textfile
+rs2216140	-0.1026	0.0219	0.0341	A	G	2.733e-06	M16634	TRUE	reported	wpPnLy	textfile

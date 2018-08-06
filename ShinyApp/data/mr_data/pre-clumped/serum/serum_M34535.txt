@@ -1,0 +1,9 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs10801685	-0.4744	0.1045	0.0209	T	G	5.673e-06	M34535	TRUE	reported	cYMhS1	textfile
+rs11078614	0.3903	0.0859	0.0126	C	G	5.576e-06	M34535	TRUE	reported	cYMhS1	textfile
+rs2941589	0.0598	0.0127	0.8527	A	G	2.583e-06	M34535	TRUE	reported	cYMhS1	textfile
+rs11070217	0.0435	0.0091	0.4394	T	C	1.553e-06	M34535	TRUE	reported	cYMhS1	textfile
+rs8180157	-0.041	0.0091	0.3926	A	G	6.973e-06	M34535	TRUE	reported	cYMhS1	textfile
+rs9634561	0.0664	0.0149	0.1388	A	G	7.765e-06	M34535	TRUE	reported	cYMhS1	textfile
+rs705795	0.0551	0.0104	0.2579	T	C	1.134e-07	M34535	TRUE	reported	cYMhS1	textfile
+rs11743823	0.0545	0.0114	0.2041	T	C	1.64e-06	M34535	TRUE	reported	cYMhS1	textfile

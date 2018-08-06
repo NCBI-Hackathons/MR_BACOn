@@ -1,0 +1,16 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs6599251	-0.028	0.0062	0.553	T	G	5.412e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs7231703	0.035	0.0069	0.3913	A	T	3.668e-07	M33633	TRUE	reported	qZjiuZ	textfile
+rs2283530	0.1788	0.0401	0.0497	A	G	8.264e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs6798015	-0.0284	0.0063	0.6217	T	C	5.677e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs7651106	0.0315	0.007	0.3129	T	C	6.663e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs12071172	0.0934	0.0206	0.0265	A	G	5.583e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs11934821	0.0354	0.0079	0.8122	A	G	7.798e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs13376835	-0.0401	0.0082	0.8266	A	G	1.133e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs2933259	-0.0278	0.0062	0.5499	T	C	6.527e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs7430438	-0.0279	0.0062	0.5565	A	G	6.857e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs866111	0.0496	0.0112	0.0922	T	C	9.752e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs17090140	0.0636	0.0142	0.0502	A	G	7.072e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs6917152	0.0893	0.0195	0.0265	A	C	4.916e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs1246172	0.0328	0.007	0.2836	A	G	2.516e-06	M33633	TRUE	reported	qZjiuZ	textfile
+rs1434384	-0.0305	0.0062	0.5567	A	G	7.151e-07	M33633	TRUE	reported	qZjiuZ	textfile

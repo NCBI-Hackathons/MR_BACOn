@@ -1,0 +1,14 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs12469856	-0.0204	0.0043	0.707	A	T	2.121e-06	M33363	TRUE	reported	ongkOJ	textfile
+rs10732795	-0.025	0.0056	0.1261	T	C	7.341e-06	M33363	TRUE	reported	ongkOJ	textfile
+rs9385732	-0.0479	0.0104	0.0341	T	C	4.088e-06	M33363	TRUE	reported	ongkOJ	textfile
+rs2416328	0.02	0.0044	0.7592	T	C	6.345e-06	M33363	TRUE	reported	ongkOJ	textfile
+rs9373147	0.0718	0.0155	0.9819	A	C	3.527e-06	M33363	TRUE	reported	ongkOJ	textfile
+rs17165467	0.0358	0.0072	0.1252	T	C	7.829e-07	M33363	TRUE	reported	ongkOJ	textfile
+rs6903432	-0.069	0.0147	0.0183	C	G	2.77e-06	M33363	TRUE	reported	ongkOJ	textfile
+rs10822933	0.0247	0.005	0.6201	A	G	6.093e-07	M33363	TRUE	reported	ongkOJ	textfile
+rs17165485	0.0286	0.006	0.1183	T	C	2.067e-06	M33363	TRUE	reported	ongkOJ	textfile
+rs2642911	0.0178	0.0039	0.6151	T	G	4.53e-06	M33363	TRUE	reported	ongkOJ	textfile
+rs8011328	0.1081	0.024	0.0129	A	G	6.587e-06	M33363	TRUE	reported	ongkOJ	textfile
+rs4416818	0.0213	0.0046	0.2365	A	G	2.785e-06	M33363	TRUE	reported	ongkOJ	textfile
+rs7083972	-0.0292	0.0057	0.2206	A	T	3.629e-07	M33363	TRUE	reported	ongkOJ	textfile

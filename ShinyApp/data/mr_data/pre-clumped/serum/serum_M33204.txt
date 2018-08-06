@@ -1,0 +1,16 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs280302	0.0221	0.005	0.8923	T	C	8.36e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs16984993	0.0364	0.0079	0.0398	T	C	4.434e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs16944339	-0.0248	0.0052	0.1526	A	T	1.989e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs9521845	0.0154	0.0034	0.3291	A	G	7.188e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs4807944	0.0206	0.0044	0.1282	T	C	3.315e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs17552447	0.0563	0.0125	0.9767	T	C	6.785e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs822531	0.0181	0.0041	0.7832	T	C	9.473e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs11133063	-0.0135	0.003	0.5241	T	G	6.737e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs7151750	-0.0142	0.0031	0.5979	C	G	4.122e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs2736780	0.0182	0.0041	0.6897	T	C	9.529e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs1327266	0.0357	0.0077	0.9338	T	C	3.884e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs2293728	0.0158	0.0034	0.728	T	C	4.359e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs7953025	0.0172	0.0038	0.5419	A	G	7.612e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs10952210	0.0282	0.0061	0.1046	T	C	4.377e-06	M33204	TRUE	reported	ajj1Gk	textfile
+rs17418798	-0.0535	0.0116	0.9675	T	C	4.24e-06	M33204	TRUE	reported	ajj1Gk	textfile

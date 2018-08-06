@@ -1,0 +1,14 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs16828708	0.0135	0.0027	0.7407	A	G	9.078e-07	M18929	TRUE	reported	wCMXYi	textfile
+rs9500850	0.0555	0.0124	0.9644	A	G	8.118e-06	M18929	TRUE	reported	wCMXYi	textfile
+rs12803289	-0.0121	0.0026	0.2119	A	G	4.313e-06	M18929	TRUE	reported	wCMXYi	textfile
+rs225998	-0.0114	0.0026	0.7547	A	C	9.006e-06	M18929	TRUE	reported	wCMXYi	textfile
+rs4904262	-0.0121	0.0026	0.1727	T	C	4.909e-06	M18929	TRUE	reported	wCMXYi	textfile
+rs2806302	0.0125	0.0025	0.688	T	G	6.711e-07	M18929	TRUE	reported	wCMXYi	textfile
+rs11061544	-0.0241	0.0051	0.95	A	G	2.109e-06	M18929	TRUE	reported	wCMXYi	textfile
+rs2363698	0.0118	0.0026	0.7857	A	T	5.192e-06	M18929	TRUE	reported	wCMXYi	textfile
+rs1799405	0.032	0.0061	0.9643	A	T	1.809e-07	M18929	TRUE	reported	wCMXYi	textfile
+rs7607746	-0.0333	0.0062	0.1582	T	C	8.347e-08	M18929	TRUE	reported	wCMXYi	textfile
+rs746764	-0.0236	0.0052	0.1676	T	C	6.629e-06	M18929	TRUE	reported	wCMXYi	textfile
+rs9517889	-0.0145	0.0032	0.1985	A	T	5.59e-06	M18929	TRUE	reported	wCMXYi	textfile
+rs2028973	0.0162	0.0034	0.1086	T	C	2.662e-06	M18929	TRUE	reported	wCMXYi	textfile

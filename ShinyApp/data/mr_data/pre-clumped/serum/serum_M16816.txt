@@ -1,0 +1,16 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs1552422	-0.0119	0.0026	0.5052	A	G	6.004e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs6810964	0.0125	0.0026	0.5495	A	G	2.079e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs6546734	0.0151	0.0033	0.2938	C	G	6.38e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs8105530	0.0128	0.0028	0.5286	T	C	4.852e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs4665701	-0.0121	0.0027	0.4689	T	C	4.902e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs1861371	0.0165	0.0035	0.1774	A	G	2.354e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs10980324	0.0411	0.0084	0.9677	T	C	9.208e-07	M16816	TRUE	reported	L8wFNf	textfile
+rs11935679	-0.0155	0.0034	0.202	A	G	6.795e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs1861007	-0.0181	0.004	0.1925	C	G	7.814e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs10974528	0.0155	0.0035	0.2038	A	G	8.883e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs10254175	-0.0157	0.0034	0.2329	T	C	3.928e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs1517397	0.0122	0.0027	0.3986	T	C	4.442e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs17655603	0.0904	0.0205	0.9567	T	C	9.912e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs2473097	0.0154	0.0034	0.7894	T	C	5.895e-06	M16816	TRUE	reported	L8wFNf	textfile
+rs12629505	0.0128	0.0026	0.3983	A	G	1.095e-06	M16816	TRUE	reported	L8wFNf	textfile

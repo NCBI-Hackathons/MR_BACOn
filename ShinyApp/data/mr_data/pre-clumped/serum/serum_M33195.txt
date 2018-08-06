@@ -1,0 +1,9 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs12566852	0.0515	0.0112	0.7395	T	C	4.698e-06	M33195	TRUE	reported	BfBRtR	textfile
+rs2159190	-0.0552	0.0123	0.8227	C	G	7.399e-06	M33195	TRUE	reported	BfBRtR	textfile
+rs2490700	0.1208	0.0269	0.0343	C	G	7.349e-06	M33195	TRUE	reported	BfBRtR	textfile
+rs17647583	0.0744	0.0163	0.1044	A	G	4.763e-06	M33195	TRUE	reported	BfBRtR	textfile
+rs2298126	-0.0484	0.0101	0.3406	A	C	1.572e-06	M33195	TRUE	reported	BfBRtR	textfile
+rs2493950	-0.2434	0.0497	0.9465	T	C	9.902e-07	M33195	TRUE	reported	BfBRtR	textfile
+rs17556249	0.1361	0.0302	0.0315	T	C	6.428e-06	M33195	TRUE	reported	BfBRtR	textfile
+rs11192313	0.0428	0.0093	0.4433	A	G	3.691e-06	M33195	TRUE	reported	BfBRtR	textfile

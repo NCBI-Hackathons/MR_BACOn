@@ -1,0 +1,17 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs1959400	0.0122	0.0027	0.5551	T	G	6.668e-06	M19414	TRUE	reported	ZK8hMe	textfile
+rs477580	0.0168	0.0035	0.2397	A	G	1.272e-06	M19414	TRUE	reported	ZK8hMe	textfile
+rs11623007	0.012	0.0027	0.5644	A	C	8.617e-06	M19414	TRUE	reported	ZK8hMe	textfile
+rs1742707	0.0122	0.0027	0.4385	T	G	4.884e-06	M19414	TRUE	reported	ZK8hMe	textfile
+rs12961939	0.0159	0.0034	0.7434	A	C	3.774e-06	M19414	TRUE	reported	ZK8hMe	textfile
+rs7151771	-0.0123	0.0027	0.605	A	G	5.017e-06	M19414	TRUE	reported	ZK8hMe	textfile
+rs12028243	-0.0567	0.0113	0.0717	T	C	5.73e-07	M19414	TRUE	reported	ZK8hMe	textfile
+rs11188538	-0.0221	0.0044	0.8687	A	G	4.854e-07	M19414	TRUE	reported	ZK8hMe	textfile
+rs921640	-0.0732	0.0164	0.0331	A	G	8.245e-06	M19414	TRUE	reported	ZK8hMe	textfile
+rs4415526	0.0137	0.0028	0.4107	T	C	7.698e-07	M19414	TRUE	reported	ZK8hMe	textfile
+rs12152460	0.021	0.0045	0.1557	T	C	3.76e-06	M19414	TRUE	reported	ZK8hMe	textfile
+rs229778	-0.019	0.0043	0.1425	T	C	9.884e-06	M19414	TRUE	reported	ZK8hMe	textfile
+rs1417207	-0.0157	0.0035	0.7759	A	G	6.031e-06	M19414	TRUE	reported	ZK8hMe	textfile
+rs4798977	-0.0166	0.0035	0.7188	C	G	1.864e-06	M19414	TRUE	reported	ZK8hMe	textfile
+rs818525	0.0199	0.0044	0.1436	T	C	6.459e-06	M19414	TRUE	reported	ZK8hMe	textfile
+rs6894183	0.016	0.0035	0.8137	A	T	6.026e-06	M19414	TRUE	reported	ZK8hMe	textfile

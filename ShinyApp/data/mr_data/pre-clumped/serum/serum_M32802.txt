@@ -1,0 +1,13 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs307944	-0.041	0.0091	0.205	A	G	5.95e-06	M32802	TRUE	reported	CHPkr7	textfile
+rs1952618	0.1144	0.0258	0.0297	C	G	9.554e-06	M32802	TRUE	reported	CHPkr7	textfile
+rs853725	0.044	0.0089	0.5592	T	C	8.623e-07	M32802	TRUE	reported	CHPkr7	textfile
+rs17862875	0.0291	0.0057	0.2919	A	G	2.989e-07	M32802	TRUE	reported	CHPkr7	textfile
+rs11099711	0.0276	0.0057	0.6983	A	C	1.26e-06	M32802	TRUE	reported	CHPkr7	textfile
+rs17863787	-0.0295	0.0057	0.6754	T	G	1.892e-07	M32802	TRUE	reported	CHPkr7	textfile
+rs1105879	-0.0251	0.0056	0.6477	A	C	6.62e-06	M32802	TRUE	reported	CHPkr7	textfile
+rs10511016	0.0261	0.0058	0.2764	T	C	6.314e-06	M32802	TRUE	reported	CHPkr7	textfile
+rs2231142	0.0368	0.0081	0.1112	T	G	6.335e-06	M32802	TRUE	reported	CHPkr7	textfile
+rs1017275	0.0433	0.009	0.0898	T	C	1.498e-06	M32802	TRUE	reported	CHPkr7	textfile
+rs10929301	-0.0272	0.005	0.5589	C	G	6.499e-08	M32802	TRUE	reported	CHPkr7	textfile
+rs2741045	0.0285	0.0057	0.302	T	C	6.544e-07	M32802	TRUE	reported	CHPkr7	textfile

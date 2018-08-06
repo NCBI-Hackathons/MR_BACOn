@@ -1,0 +1,10 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs1722390	-0.0065	0.0012	0.6222	T	C	2.302e-08	M00064	TRUE	reported	AVx9pt	textfile
+rs2953014	0.0055	0.0012	0.742	T	G	7.774e-06	M00064	TRUE	reported	AVx9pt	textfile
+rs6831907	0.0206	0.0046	0.0395	T	C	7.053e-06	M00064	TRUE	reported	AVx9pt	textfile
+rs2905873	0.0055	0.0012	0.6858	A	C	2.966e-06	M00064	TRUE	reported	AVx9pt	textfile
+rs10050054	-0.0325	0.0069	0.9828	T	C	2.583e-06	M00064	TRUE	reported	AVx9pt	textfile
+rs1565225	0.007	0.0015	0.245	A	G	2.342e-06	M00064	TRUE	reported	AVx9pt	textfile
+rs12312580	0.0074	0.0012	0.8016	A	T	2.664e-09	M00064	TRUE	reported	AVx9pt	textfile
+rs1498694	0.0075	0.0011	0.4035	A	G	7.336e-11	M00064	TRUE	reported	AVx9pt	textfile
+rs1722400	0.01	0.0021	0.8799	A	C	1.286e-06	M00064	TRUE	reported	AVx9pt	textfile

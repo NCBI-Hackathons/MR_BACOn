@@ -1,0 +1,9 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs7129619	0.0297	0.0066	0.6449	C	G	7.245e-06	M32857	TRUE	reported	DelzWa	textfile
+rs671321	0.0305	0.0066	0.5978	T	G	4.011e-06	M32857	TRUE	reported	DelzWa	textfile
+rs6747014	0.048	0.0103	0.8967	T	C	3.122e-06	M32857	TRUE	reported	DelzWa	textfile
+rs1578963	0.0846	0.0178	0.0342	C	G	1.911e-06	M32857	TRUE	reported	DelzWa	textfile
+rs10428305	0.0309	0.0064	0.6105	T	C	1.382e-06	M32857	TRUE	reported	DelzWa	textfile
+rs11761138	-0.0301	0.0067	0.6277	A	T	6.27e-06	M32857	TRUE	reported	DelzWa	textfile
+rs6564580	0.0365	0.0082	0.3228	T	C	7.684e-06	M32857	TRUE	reported	DelzWa	textfile
+rs498275	0.0338	0.0069	0.3246	A	G	9.933e-07	M32857	TRUE	reported	DelzWa	textfile

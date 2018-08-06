@@ -1,0 +1,8 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs1348656	-0.019	0.0043	0.798	T	C	9.688e-06	M34035	TRUE	reported	NfW0XP	textfile
+rs1034879	0.0765	0.0172	0.0455	A	C	8.886e-06	M34035	TRUE	reported	NfW0XP	textfile
+rs2242415	0.0162	0.0035	0.6232	A	C	4.356e-06	M34035	TRUE	reported	NfW0XP	textfile
+rs2510027	0.017	0.0036	0.2427	A	C	2.591e-06	M34035	TRUE	reported	NfW0XP	textfile
+rs13132193	0.0317	0.0068	0.2154	A	T	3.543e-06	M34035	TRUE	reported	NfW0XP	textfile
+rs6125916	-0.0204	0.0043	0.1936	T	G	1.804e-06	M34035	TRUE	reported	NfW0XP	textfile
+rs2179320	-0.0197	0.0042	0.1977	T	C	3.516e-06	M34035	TRUE	reported	NfW0XP	textfile

@@ -1,0 +1,10 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs12442894	-0.0426	0.0096	0.2181	A	G	9.718e-06	M34499	TRUE	reported	Q5nPEp	textfile
+rs11822948	0.0477	0.0105	0.8079	T	C	5.692e-06	M34499	TRUE	reported	Q5nPEp	textfile
+rs1936458	-0.0393	0.0089	0.3221	A	G	9.967e-06	M34499	TRUE	reported	Q5nPEp	textfile
+rs17198824	-0.3408	0.0698	0.9879	A	G	1.056e-06	M34499	TRUE	reported	Q5nPEp	textfile
+rs2984639	-0.0397	0.0089	0.7403	A	G	8.6e-06	M34499	TRUE	reported	Q5nPEp	textfile
+rs12743548	-0.0356	0.008	0.4664	C	G	8.591e-06	M34499	TRUE	reported	Q5nPEp	textfile
+rs34170	0.1342	0.0284	0.9477	T	C	2.322e-06	M34499	TRUE	reported	Q5nPEp	textfile
+rs12443081	-0.0726	0.0147	0.0904	A	G	7.915e-07	M34499	TRUE	reported	Q5nPEp	textfile
+rs7152969	0.0431	0.0097	0.2096	A	G	8.009e-06	M34499	TRUE	reported	Q5nPEp	textfile

@@ -1,0 +1,13 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs10955887	-0.0282	0.0058	0.4977	C	G	1.223e-06	M34878	TRUE	reported	51Wg1X	textfile
+rs11752994	0.0927	0.0191	0.0666	T	C	1.257e-06	M34878	TRUE	reported	51Wg1X	textfile
+rs7942717	-0.1094	0.0235	0.9543	A	G	3.176e-06	M34878	TRUE	reported	51Wg1X	textfile
+rs16960359	-0.0433	0.0098	0.1019	A	G	9.298e-06	M34878	TRUE	reported	51Wg1X	textfile
+rs1384609	-0.046	0.01	0.474	T	C	4.225e-06	M34878	TRUE	reported	51Wg1X	textfile
+rs9924628	-0.0313	0.0068	0.3336	A	C	3.557e-06	M34878	TRUE	reported	51Wg1X	textfile
+rs9344588	0.0389	0.0082	0.1831	T	C	2.305e-06	M34878	TRUE	reported	51Wg1X	textfile
+rs11102783	0.0379	0.0081	0.1984	A	G	3.163e-06	M34878	TRUE	reported	51Wg1X	textfile
+rs32281	-0.1422	0.0293	0.9844	T	C	1.222e-06	M34878	TRUE	reported	51Wg1X	textfile
+rs16964257	-0.0669	0.0145	0.9549	T	C	4.015e-06	M34878	TRUE	reported	51Wg1X	textfile
+rs2800903	-0.026	0.0059	0.4619	T	C	9.185e-06	M34878	TRUE	reported	51Wg1X	textfile
+rs1859570	0.1451	0.0309	0.0272	T	C	2.651e-06	M34878	TRUE	reported	51Wg1X	textfile

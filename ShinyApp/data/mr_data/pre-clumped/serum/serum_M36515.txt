@@ -1,0 +1,14 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs8184882	0.0043	9e-04	0.6224	T	C	7.274e-06	M36515	TRUE	reported	LQnyol	textfile
+rs169291	0.0052	0.001	0.7729	C	G	3.095e-07	M36515	TRUE	reported	LQnyol	textfile
+rs1849217	0.007	0.0014	0.8178	T	C	8.977e-07	M36515	TRUE	reported	LQnyol	textfile
+rs17087080	0.0143	0.0032	0.975	T	C	8.472e-06	M36515	TRUE	reported	LQnyol	textfile
+rs6860185	-0.0079	0.0018	0.8821	T	C	6.509e-06	M36515	TRUE	reported	LQnyol	textfile
+rs2839579	0.0043	9e-04	0.312	A	G	4.451e-06	M36515	TRUE	reported	LQnyol	textfile
+rs12630256	-0.0262	0.0056	0.0162	T	C	3.086e-06	M36515	TRUE	reported	LQnyol	textfile
+rs12214369	0.0046	0.001	0.7433	T	G	1.949e-06	M36515	TRUE	reported	LQnyol	textfile
+rs6014468	-0.0055	0.0012	0.2205	A	G	8.175e-06	M36515	TRUE	reported	LQnyol	textfile
+rs8130322	0.0045	0.001	0.2718	T	C	6.059e-06	M36515	TRUE	reported	LQnyol	textfile
+rs6541210	-0.004	9e-04	0.4489	A	G	8.424e-06	M36515	TRUE	reported	LQnyol	textfile
+rs2850161	0.0047	0.001	0.3664	T	G	4.835e-06	M36515	TRUE	reported	LQnyol	textfile
+rs12626113	-0.0058	0.0012	0.2385	T	C	9.779e-07	M36515	TRUE	reported	LQnyol	textfile

@@ -1,0 +1,12 @@
+SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
+rs7036822	-0.0663	0.0142	0.807	A	G	3.122e-06	M34327	TRUE	reported	S1mkbV	textfile
+rs2826581	-0.0695	0.0139	0.789	T	G	5.576e-07	M34327	TRUE	reported	S1mkbV	textfile
+rs10916770	0.0837	0.0183	0.8056	A	T	5.047e-06	M34327	TRUE	reported	S1mkbV	textfile
+rs2925759	-0.067	0.0148	0.1897	T	C	6.276e-06	M34327	TRUE	reported	S1mkbV	textfile
+rs17116246	0.0669	0.0146	0.1842	A	G	4.686e-06	M34327	TRUE	reported	S1mkbV	textfile
+rs2826556	-0.0691	0.015	0.8293	C	G	4.259e-06	M34327	TRUE	reported	S1mkbV	textfile
+rs1373562	0.0713	0.0155	0.1574	T	C	3.886e-06	M34327	TRUE	reported	S1mkbV	textfile
+rs12200779	0.0871	0.0191	0.0859	A	G	5.102e-06	M34327	TRUE	reported	S1mkbV	textfile
+rs12466783	-0.1784	0.0401	0.9759	C	G	8.562e-06	M34327	TRUE	reported	S1mkbV	textfile
+rs12748135	-0.0701	0.0157	0.8469	T	C	7.543e-06	M34327	TRUE	reported	S1mkbV	textfile
+rs898219	-0.0664	0.0138	0.6202	T	G	1.436e-06	M34327	TRUE	reported	S1mkbV	textfile
