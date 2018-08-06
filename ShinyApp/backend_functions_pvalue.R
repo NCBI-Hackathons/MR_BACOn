@@ -59,13 +59,13 @@ perform_metab_pathway_data <- function(metab_list, tiss, dataset) {
   names(metab_list) <- c("fp_4/4", "fp_3/4", "fp_1/4")
   percents <- c()
   for ( i in metab_list) {
-    print(paste("path metabs",i))
+    print(paste("path metab:",i))
     passed <- 0
     run <- 0
     for ( j in i ) {
       print(j)
       run <- run+1
-      harm <- tryCatch({perform_mr(tissue,"",j)},error=function(x){return(0)})
+      harm <- tryCatch({perform_mr(tiss,0.05,"",j)},error=function(x){return(0)})
       print(harm)
       #looks at MR EGGER results
       if ( harm != 0 ) {
