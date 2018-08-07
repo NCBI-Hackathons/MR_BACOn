@@ -1,5 +1,5 @@
 source("plotFunctions.R")
-source("backend_functions_pvalue-cwc-fast.R")
+source("backend_functions_pvalue-cwc.R")
 library(ggplot2)
 
 server <- function(input, output,session) {
@@ -16,28 +16,30 @@ server <- function(input, output,session) {
   
   # This data table will be filled only when Run button is clicked
   dat_to_run <- reactiveValues(data = data.frame())
-  
+  dat_to_run_pathway <- reactiveValues(data = data.frame())
   # We observe if Run button is clicked
   observeEvent(input$runif, 
-    { # If the run button is clicked
-      if (input$runif !=0){
-      output$text1 <- renderText({""})
-      dat_ret <- tryCatch(perform_mr(input$tissue,input$pvalue,"",input$metabolite),error=function(e){return(1)})
-      if (dat_ret!=1){
-        dat_to_run$data <- as.data.frame(dat_ret)
-        output$renderUIForOutput <- reactive({'show'})
-        outputOptions(output, 'renderUIForOutput', suspendWhenHidden=FALSE)
-      }
-      else{
-        dat_to_run$data <- data.frame()
-        output$renderUIForNoAssoc <- reactive({'noassoc'})
-        outputOptions(output, 'renderUIForNoAssoc', suspendWhenHidden=FALSE)
-      }
-    }
-    else{
-      return()
-    }
-  })
+               { # If the run button is clicked
+                 if (input$runif !=0){
+                   output$text1 <- renderText({""})
+                   dat_ret <- tryCatch(perform_mr(input$tissue,input$pvalue,"",input$metabolite),error=function(e){return(1)})
+                   if (dat_ret!=1){
+                     dat_to_run$data <- as.data.frame(dat_ret)
+                     dat_to_run_pathway$data <- calculate2MR_pathwayAnalysis(input$metabolite,input$tissue, input$pvalue, "")
+                     output$renderUIForOutput <- reactive({'show'})
+                     outputOptions(output, 'renderUIForOutput', suspendWhenHidden=FALSE)
+                   }
+                   else{
+                     dat_to_run$data <- data.frame()
+                     dat_to_run_pathway$data <-data.frame()
+                     output$renderUIForNoAssoc <- reactive({'noassoc'})
+                     outputOptions(output, 'renderUIForNoAssoc', suspendWhenHidden=FALSE)
+                   }
+                 }
+                 else{
+                   return()
+                 }
+               })
   
   
   observeEvent(input$reset, {
@@ -94,7 +96,7 @@ server <- function(input, output,session) {
     filename = function() { paste('pathwayOutput', '.png', sep='') },
     content = function(file) {
       device <- function(..., width, height) grDevices::png(..., width = width, height = height, res = 300, units = "in")
-      ggsave(file, plot = perform_metab_pathway_data("",input$tissue,""), device = device)
+      ggsave(file, plot = plot_metab_pathway_data(dat_to_run_pathway$data), device = device)
     }
   )
   
@@ -116,11 +118,11 @@ server <- function(input, output,session) {
     })
   
   output$pathwayPlot <- renderPlot({
-    if (nrow(dat_to_run$data)==0){ 
+    if (nrow(dat_to_run_pathway$data)==0){ 
       return()
     }
     else{
-      print(perform_metab_pathway_data("",input$tissue,""))
+      print(plot_metab_pathway_data(dat_to_run_pathway$data))
     }
   })
   

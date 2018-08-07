@@ -1,25 +1,14 @@
-library(KEGGREST)
+#library(KEGGREST)
 
-getMetabPathway <- function(metab.name,tissue) {
+getMetabPathway <- function(metab.name) {
 
-# Get the key of kegg IDs to common names
-load("data/full_kegg_key.RData")
+kegg.key <- read.table("data/key-nameToKegg_urine-metabolites.txt",header=T)
 
-# Get kegg ID
-kegg.id <- NULL
-for (id in names(kegg.key)) {
-if (tolower(metab.name) %in% tolower(kegg.key[[id]])) {
-kegg.id <- id
-break
-}
-}
-
-
-# Get the metabolites measured in the tissue of interest
-tissue.metabs <- read.table(paste("data/metab_info/",tissue,"_map.txt",sep=""),header=T,sep="\t")
+kegg.id <- as.character(kegg.key[kegg.key$Metabolite == metab.name,2])
 
 # Define list for output pathway metabolites
 path.metabs.list <- list()
+
 
 # Get kegg data for the metabolite
 metab.kegg <- keggGet(kegg.id)
@@ -54,20 +43,9 @@ next
 }
 else {
 # Match up metabolite names with the ones we are using
-path.metabs.ids <- paste("cpd:",names(path.metabs),sep="")
-path.metabs.names <- c()
-i <- 1
-for (tissue.metab.name in tissue.metabs[,2]) {
-for (path.metab.id in path.metabs.ids) {
-if ((tolower(tissue.metab.name) %in% tolower(kegg.key[[path.metab.id]])) 
-| (tolower(paste("l-",tissue.metab.name,sep="")) %in% tolower(kegg.key[[path.metab.id]])) 
-| (tolower(paste("d-",tissue.metab.name,sep="")) %in% tolower(kegg.key[[path.metab.id]]))) {
-path.metabs.names[i] <- tissue.metab.name
-i <- i+1
-break
-}
-}
-}
+# to ensure no naming differences.
+# Matching will be performed on kgg ID.
+path.metabs.names <- as.vector(kegg.key[kegg.key$KEGG %in% names(path.metabs),1])
 path.metabs.list[[paste(path.name,path.id)]] <- path.metabs.names
 
 #cat(path.metabs)

@@ -28,24 +28,30 @@ perform_mr <- function(tissue, pvalue, dataset, metid) {
   path <- "data/mr_data/"
   clump_path <- paste0("data/mr_data/pre-clumped/",tissue,"/")
   metabo <- get_metabolite(metid, tissue) #this gets the id from metabolite name
-  
+  print(metabo)
   #load pre-clumped data
   expos_data <- read.delim(paste0(clump_path,tissue,"_",metabo,".txt"), header = T, stringsAsFactors = F)
-  
   #Subset exposure data by user provided p-value if necessary
   #expos_data <- expos_data[expos_data$pval.exposure < pvalue,]
   
   #Read in disease GWAS 
-  disease_outcome <- read_outcome_data(filename = paste(path,"cad.txt", sep=""), snps = expos_data$SNP, sep = "\t")
-  
-  #Subset outcome data by user provided p-value
-  #print(head(disease_outcome))
-  disease_outcome <- disease_outcome[disease_outcome$pval.outcome < pvalue,]
-  print(paste("disease_outcome n snp:",dim(disease_outcome)[1]))
-  
-  #Harmonize data
-  harmed_data <- harmonise_data(exposure_dat = expos_data, outcome_dat = disease_outcome)
-  return(harmed_data)
+  disease_data <- read.delim(paste(path,"cad.txt", sep=""),header = T, stringsAsFactors = F)
+  if (sum(expos_data$SNP %in% disease_data$SNP) > 0){
+    disease_outcome <- read_outcome_data(filename = paste(path,"cad.txt", sep=""), snps = expos_data$SNP, sep = "\t")
+    
+    
+    #Subset outcome data by user provided p-value
+    #print(head(disease_outcome))
+    disease_outcome <- disease_outcome[disease_outcome$pval.outcome < pvalue,]
+    print(paste("disease_outcome n snp:",dim(disease_outcome)[1]))
+    
+    #Harmonize data
+    harmed_data <- harmonise_data(exposure_dat = expos_data, outcome_dat = disease_outcome)
+    return(harmed_data)
+  }
+  else{
+    return(matrix(nrow=0,ncol=0))
+  }
 }
 
 perform_metab_pathway_data <- function(metab_list, tiss, dataset) {
