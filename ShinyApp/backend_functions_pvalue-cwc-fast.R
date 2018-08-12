@@ -55,7 +55,7 @@ perform_mr <- function(tissue, pvalue, dataset, metid) {
   #expos_data <- expos_data[expos_data$pval.exposure < pvalue,]
   
   #Read in disease GWAS 
-  disease_data <- read.delim(paste(path,"cad_p05.txt.txt", sep=""),header = T, stringsAsFactors = F)
+  disease_data <- read.delim(paste(path,"cad_p05.txt", sep=""),header = T, stringsAsFactors = F)
   if (sum(expos_data$SNP %in% disease_data$SNP) > 0){
     disease_outcome <- read_outcome_data(filename = paste(path,"cad.txt", sep=""), snps = expos_data$SNP, sep = "\t")
     
