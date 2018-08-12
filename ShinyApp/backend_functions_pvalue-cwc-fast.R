@@ -29,8 +29,8 @@ perform_mr <- function(tissue, pvalue, dataset, metid) {
   
   ### first check the no results file to see if metabolite even has any results
   ### if not the end quickly
-  no_results <- read.table(file=paste0(path,tissue,"_noresults.txt"), header=FALSE, sep=" ", stringsAsFactors=FALSE)
-  if(metid%in%no_results$V1){return(matrix(nrow = 0,ncol = 0))}
+  no_results <- read.table(file=paste0(path,tissue,"_noresults.txt"), header=TRUE, sep=" ", stringsAsFactors=FALSE)
+  if(metid%in%no_results$metabs){return(matrix(nrow = 0,ncol = 0))}
   
   clump_path <- paste0("data/mr_data/pre-clumped/",tissue,"/")
   metabo <- get_metabolite(metid, tissue) #this gets the id from metabolite name
