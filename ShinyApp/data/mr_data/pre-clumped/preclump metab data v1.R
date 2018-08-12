@@ -7,7 +7,14 @@ setwd("C:/Users/cwardcav/Desktop/GitHub/MR_BACOn/ShinyApp/data/mr_data/pre-clump
 library(TwoSampleMR)
 
 serum <- read.delim("../serum.txt", header = T, stringsAsFactors = F)
-metabs_serum <- unique(serum$metID)
+cad <- read.delim("../cad_p05.txt",header = T, stringsAsFactors = F)
+
+serum_sub <- subset(serum, SNP%in%cad$SNP)
+metabs_serum <- unique(serum_sub$metID)
+
+no_results <- unique(serum$metID[!serum$metID%in%serum_sub$metID])
+names(no_results) <- "metabs"
+write.table(no_results, file="../serum_noresults.txt", col.names=FALSE, row.names=FALSE, quote=FALSE, sep="\t")
 
 setwd("serum/")
 count = 1
@@ -26,7 +33,13 @@ for(m in metabs_serum)
 ### now for urine
 
 urine <- read.delim("../../urine.txt", header = T, stringsAsFactors = F)
-metabs_urine <- unique(urine$metID)
+
+urine_sub <- subset(urine, SNP%in%cad$SNP)
+metabs_urine <- unique(urine_sub$metID)
+
+no_results <- unique(urine$metID[!urine$metID%in%urine_sub$metID])
+names(no_results) <- "metabs"
+write.table(no_results, file="../urine_noresults.txt", col.names=FALSE, row.names=FALSE, quote=FALSE, sep="\t")
 
 setwd("../urine/")
 count = 1
