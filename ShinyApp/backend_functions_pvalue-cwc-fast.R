@@ -26,30 +26,17 @@ library(TwoSampleMR)
 #FUTURE GOAL WILL BE TO MAKE USE OF THE DATASET FEATURE
 perform_mr <- function(tissue, pvalue, dataset, metid) {
   path <- "data/mr_data/"
+  clump_path <- paste0("data/mr_data/pre-clumped/",tissue,"/")
+  metabo <- get_metabolite(metid, tissue) #this gets the id from metabolite name
+  path <- "data/mr_data/"
+  
+  print(metabo)
   
   ### first check the no results file to see if metabolite even has any results
   ### if not the end quickly
-  no_results <- read.table(file=paste0(path,tissue,"_noresults.txt"), header=TRUE, sep=" ", stringsAsFactors=FALSE)
-  if(metid%in%no_results$metabs){return(matrix(nrow = 0,ncol = 0))}
+  no_results <- read.table(file=paste0(path,tissue,"_noresults.txt"), header=FALSE, sep=" ", stringsAsFactors=FALSE)
+  if(metabo%in%no_results$V1){return(matrix(nrow = 0,ncol = 0))}
   
-  clump_path <- paste0("data/mr_data/pre-clumped/",tissue,"/")
-  metabo <- get_metabolite(metid, tissue) #this gets the id from metabolite name
-  print(metabo)
-  path <- "data/mr_data/"
-  
-  #silly workaround to get metabolite of interest
-  tmp <- read.delim(paste(path,tissue,".txt", sep=""), header = T, stringsAsFactors = F)
-  tmp <- subset(tmp, metID==metabo)
-  
-  # If there are no SNPs found for the metabolite write to file, terminate function, and return empty matrix
-  if(nrow(tmp)==0)
-  {
-    write(paste0(metid,"\n"),file=paste0(path,tissue,"_noresults.txt"), append=TRUE)
-    return(matrix(nrow = 0,ncol = 0))
-  }
-  
-  #load pre-clumped data
- 
   expos_data <- read.delim(paste0(clump_path,tissue,"_",metabo,".txt"), header = T, stringsAsFactors = F)
   #Subset exposure data by user provided p-value if necessary
   #expos_data <- expos_data[expos_data$pval.exposure < pvalue,]
