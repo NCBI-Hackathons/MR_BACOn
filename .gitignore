@@ -1,2 +1,5 @@
 # ignore all Rhistory files
 *.Rhistory
+# ignore unnecessary cad gwas
+DataCleaningScripts\data\cad.additive.Oct2015.pub.zip
+DataCleaningScripts\data\cad.txt
