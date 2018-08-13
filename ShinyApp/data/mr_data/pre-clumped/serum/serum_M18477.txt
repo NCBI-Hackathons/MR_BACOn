@@ -1,9 +1,9 @@
 SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
-rs6585252	-0.1538	0.0312	0.9571	C	G	8.548e-07	M18477	TRUE	reported	J5Rh0m	textfile
-rs2420201	0.1473	0.0309	0.0494	A	G	1.898e-06	M18477	TRUE	reported	J5Rh0m	textfile
-rs7856830	-0.0891	0.0188	0.1533	T	C	2.272e-06	M18477	TRUE	reported	J5Rh0m	textfile
-rs17746543	-0.0883	0.0191	0.5073	A	G	3.666e-06	M18477	TRUE	reported	J5Rh0m	textfile
-rs12477733	0.127	0.0285	0.0525	T	C	8.171e-06	M18477	TRUE	reported	J5Rh0m	textfile
-rs9301881	0.0593	0.0131	0.5692	T	C	5.787e-06	M18477	TRUE	reported	J5Rh0m	textfile
-rs4338010	-0.1084	0.0239	0.0788	T	C	5.728e-06	M18477	TRUE	reported	J5Rh0m	textfile
-rs806784	-0.0952	0.0198	0.7156	T	C	1.483e-06	M18477	TRUE	reported	J5Rh0m	textfile
+rs6585252	-0.1538	0.0312	0.9571	C	G	8.548e-07	M18477	TRUE	reported	6d0Lw5	textfile
+rs2420201	0.1473	0.0309	0.0494	A	G	1.898e-06	M18477	TRUE	reported	6d0Lw5	textfile
+rs7856830	-0.0891	0.0188	0.1533	T	C	2.272e-06	M18477	TRUE	reported	6d0Lw5	textfile
+rs17746543	-0.0883	0.0191	0.5073	A	G	3.666e-06	M18477	TRUE	reported	6d0Lw5	textfile
+rs12477733	0.127	0.0285	0.0525	T	C	8.171e-06	M18477	TRUE	reported	6d0Lw5	textfile
+rs9301881	0.0593	0.0131	0.5692	T	C	5.787e-06	M18477	TRUE	reported	6d0Lw5	textfile
+rs4338010	-0.1084	0.0239	0.0788	T	C	5.728e-06	M18477	TRUE	reported	6d0Lw5	textfile
+rs806784	-0.0952	0.0198	0.7156	T	C	1.483e-06	M18477	TRUE	reported	6d0Lw5	textfile

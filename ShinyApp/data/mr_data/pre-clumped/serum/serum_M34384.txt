@@ -1,9 +1,9 @@
 SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
-rs9443691	-0.0809	0.0182	0.1464	A	G	8.678e-06	M34384	TRUE	reported	iPakAK	textfile
-rs2688892	0.0688	0.015	0.2396	T	C	4.467e-06	M34384	TRUE	reported	iPakAK	textfile
-rs9319364	0.0919	0.0207	0.3038	T	C	8.749e-06	M34384	TRUE	reported	iPakAK	textfile
-rs4408387	-0.0757	0.0163	0.2077	A	G	3.272e-06	M34384	TRUE	reported	iPakAK	textfile
-rs3741793	-0.0684	0.0154	0.2267	C	G	9.22e-06	M34384	TRUE	reported	iPakAK	textfile
-rs7975440	-0.0885	0.0187	0.1425	T	C	2.313e-06	M34384	TRUE	reported	iPakAK	textfile
-rs4708385	-0.0608	0.0133	0.3704	A	G	5.201e-06	M34384	TRUE	reported	iPakAK	textfile
-rs17630756	0.1768	0.0391	0.0279	A	G	5.986e-06	M34384	TRUE	reported	iPakAK	textfile
+rs9443691	-0.0809	0.0182	0.1464	A	G	8.678e-06	M34384	TRUE	reported	xSqGiP	textfile
+rs2688892	0.0688	0.015	0.2396	T	C	4.467e-06	M34384	TRUE	reported	xSqGiP	textfile
+rs9319364	0.0919	0.0207	0.3038	T	C	8.749e-06	M34384	TRUE	reported	xSqGiP	textfile
+rs4408387	-0.0757	0.0163	0.2077	A	G	3.272e-06	M34384	TRUE	reported	xSqGiP	textfile
+rs3741793	-0.0684	0.0154	0.2267	C	G	9.22e-06	M34384	TRUE	reported	xSqGiP	textfile
+rs7975440	-0.0885	0.0187	0.1425	T	C	2.313e-06	M34384	TRUE	reported	xSqGiP	textfile
+rs4708385	-0.0608	0.0133	0.3704	A	G	5.201e-06	M34384	TRUE	reported	xSqGiP	textfile
+rs17630756	0.1768	0.0391	0.0279	A	G	5.986e-06	M34384	TRUE	reported	xSqGiP	textfile

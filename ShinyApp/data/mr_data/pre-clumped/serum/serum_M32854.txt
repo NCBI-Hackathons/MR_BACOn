@@ -1,8 +1,8 @@
 SNP	beta.exposure	se.exposure	eaf.exposure	effect_allele.exposure	other_allele.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	id.exposure	data_source.exposure
-rs442288	-0.1078	0.0234	0.0654	C	G	3.989e-06	M32854	TRUE	reported	qRjPcQ	textfile
-rs7559623	0.0631	0.0143	0.0545	A	G	9.58e-06	M32854	TRUE	reported	qRjPcQ	textfile
-rs4899909	0.0482	0.0108	0.8983	A	G	7.93e-06	M32854	TRUE	reported	qRjPcQ	textfile
-rs10428305	0.0324	0.0064	0.6101	T	C	4.639e-07	M32854	TRUE	reported	qRjPcQ	textfile
-rs174548	-0.0341	0.007	0.7165	C	G	1.191e-06	M32854	TRUE	reported	qRjPcQ	textfile
-rs6723705	0.0411	0.0081	0.5871	A	G	3.46e-07	M32854	TRUE	reported	qRjPcQ	textfile
-rs6763260	0.03	0.0067	0.6335	T	C	7.756e-06	M32854	TRUE	reported	qRjPcQ	textfile
+rs442288	-0.1078	0.0234	0.0654	C	G	3.989e-06	M32854	TRUE	reported	DgEcJ5	textfile
+rs7559623	0.0631	0.0143	0.0545	A	G	9.58e-06	M32854	TRUE	reported	DgEcJ5	textfile
+rs4899909	0.0482	0.0108	0.8983	A	G	7.93e-06	M32854	TRUE	reported	DgEcJ5	textfile
+rs10428305	0.0324	0.0064	0.6101	T	C	4.639e-07	M32854	TRUE	reported	DgEcJ5	textfile
+rs174548	-0.0341	0.007	0.7165	C	G	1.191e-06	M32854	TRUE	reported	DgEcJ5	textfile
+rs6723705	0.0411	0.0081	0.5871	A	G	3.46e-07	M32854	TRUE	reported	DgEcJ5	textfile
+rs6763260	0.03	0.0067	0.6335	T	C	7.756e-06	M32854	TRUE	reported	DgEcJ5	textfile
