@@ -40,28 +40,22 @@ perform_mr <- function(tissue, pvalue, dataset, metid) {
   no_results <- read.table(file=paste0(path,tissue,"_noresults.txt"), header=FALSE, sep=" ", stringsAsFactors=FALSE)
   if(metabo%in%no_results$V1){return(matrix(nrow = 0,ncol = 0))}
   
-  expos_data <- read.delim(paste0(clump_path,tissue,"_",metabo,".txt"), header = T, stringsAsFactors = F)
-  #Subset exposure data by user provided p-value if necessary
-  #expos_data <- expos_data[expos_data$pval.exposure < pvalue,]
-  
-  #Read in disease GWAS 
-  disease_data <- read.delim(paste(path,"cad_p05.txt", sep=""),header = T, stringsAsFactors = F)
-  if (sum(expos_data$SNP %in% disease_data$SNP) > 0){
-    disease_outcome <- read_outcome_data(filename = paste(path,"cad.txt", sep=""), snps = expos_data$SNP, sep = "\t")
-    
-    
-    #Subset outcome data by user provided p-value
-    #print(head(disease_outcome))
+  #second check just in case a metabolite with no overlap with CAD didn't get written to no_results
+  if(file.exists(paste0(clump_path,tissue,"_",metabo,".txt")))
+  {
+    expos_data <- read.delim(paste0(clump_path,tissue,"_",metabo,".txt"), header = T, stringsAsFactors = F)
+    disease_outcome <- read_outcome_data(filename = paste0(path,"cad_p05.txt"), snps = expos_data$SNP, sep = "\t")
     disease_outcome <- disease_outcome[disease_outcome$pval.outcome < pvalue,]
-    print(paste("disease_outcome n snp:",dim(disease_outcome)[1]))
-    
-    #Harmonize data
     harmed_data <- harmonise_data(exposure_dat = expos_data, outcome_dat = disease_outcome)
     return(harmed_data)
+  } else
+  {
+    return(matrix(nrow = 0,ncol = 0))
   }
-  else{
-    return(matrix(nrow=0,ncol=0))
-  }
+  
+
+  
+  
 }
 
 perform_metab_pathway_data <- function(metab_list, tiss, dataset) {
@@ -160,7 +154,7 @@ calculate2MR_pathwayAnalysis <- function(metab.name,tissue, pvalue, dataset){
       if ("Wald ratio" %in% mr_metab$method){
         if (mr_metab[mr_metab["method"]=="Wald ratio","pval"] < 0.05) {metab_sig = c(metab_sig,metab)}
       }
-      else if (mr_metab[mr_metab["method"]=="Inverse variance weighted","pval"] < 0.05){ metab_sig = c(metab_sig,metab)}
+      else if (sum((mr_metab[,"pval"]) < 0.05) >= 3){ metab_sig = c(metab_sig,metab)} ### at least three tests show significance
     }
   }
   
@@ -183,11 +177,44 @@ calculate2MR_pathwayAnalysis <- function(metab.name,tissue, pvalue, dataset){
     metaboliteOfInterestName_fordf = c(metaboliteOfInterestName_fordf,metab.name)
   }
   
-  return(data.frame(pathwayNames=pathwaynames_fordf,totalMetabolites=totalNumberMetabolites_fordf,
+  return(data.frame(pathwayNames=pathwaynames_fordf,
+                    totalMetabolites=totalNumberMetabolites_fordf,
                     numMetabolitesAssociatedWithDisease=numMetabolitesAssociatedWithDisease_fordf,
                     percentMetabolites=100*numMetabolitesAssociatedWithDisease_fordf/totalNumberMetabolites_fordf,
-                    metabInterest=metaboliteOfInterest_fordf,metabInterestName=metaboliteOfInterestName_fordf))
+                    metabInterest=metaboliteOfInterest_fordf,
+                    metabInterestName=metaboliteOfInterestName_fordf))
   
 }
 
+plot_metab_pathway_data <- function(data){
+  #data <- calculate2MR_pathwayAnalysis(metab.name,tissue, pvalue, dataset)
+  names_pathways <- c()
+  for (i in 1:nrow(data)){
+    #names_pathways <- c(names_pathways,paste(strsplit(as.character(data[i,"pathwayNames"]),"-")[[1]][1],"(",data[i,"totalMetabolites"],")",sep=""))
+    names_pathways <- c(names_pathways,paste(strsplit(as.character(data[i,"pathwayNames"]),"-")[[1]][1],
+                                             "(",data[i,"numMetabolitesAssociatedWithDisease"],"/",
+                                             data[i,"totalMetabolites"],")",sep=""))
+  }
+  df <- data.frame(pathways=names_pathways,numMetabsNotAsso=data$totalMetabolites-data$numMetabolitesAssociatedWithDisease,numMetabsAsso=data$numMetabolitesAssociatedWithDisease)
+  MetabIn = data$metabInterest[1]
+  MetabName = data$metabInterestName[1]
+  p <- create_ggplot_PathwayAnalysis(df,MetabName,MetabIn)
+  return(p)
+}
+
+create_ggplot_PathwayAnalysis<- function(dataframe_for_stackedBarPlot,metabname,isMetabIn){
+  if (isMetabIn==0){addToTitle=paste(metabname," is not likely associated with disease",sep="")}
+  else {addToTitle=paste(metabname," is likely associated with disease",sep="")}
+  df_melted <- melt(dataframe_for_stackedBarPlot, id.var="pathways")
+  p <- ggplot(df_melted,aes(x=pathways, y = value, fill = variable))+
+    geom_bar(stat='identity')+
+    coord_flip()+
+    ggtitle(paste("Pathway Analysis: ",addToTitle,sep=""))+
+    xlab("Pathway Name")+
+    #ylab("Percentage of Metabolites Associated With Trait")+
+    ylab("Number of Metabolites in Pathway") +
+    scale_fill_discrete(name="Metabolites",labels = c("Likely Associated With Disease", "Not Likely Associated With Disease")) +
+    theme(plot.title = element_text(hjust = 0.5))
+  return(p)
+}
 
