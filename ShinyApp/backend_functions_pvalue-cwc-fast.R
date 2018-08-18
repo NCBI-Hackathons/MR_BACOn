@@ -5,6 +5,9 @@ args = commandArgs(trailingOnly=TRUE) # What you need to pass in arguements
 #library(getopt)
 #library(rsconnect)
 library(TwoSampleMR)
+library(ggplot2)
+library(reshape2)
+source("getMetabPathway.R")
 
 #THIS IS HOW YOU START THE APP
 #library(rsconnect)
@@ -117,3 +120,74 @@ get_drop_down_metabolites <- function(tissue) {
   f <- read.delim(path, header = T, stringsAsFactors = F)
   return(f$metabolite)
 }
+
+
+
+calculate2MR_pathwayAnalysis <- function(metab.name,tissue, pvalue, dataset){
+  
+  # Get all pathways metabolite is in, as well as associated metabolites
+  pathwayAndMetabolites <- getMetabPathway(metab.name,tissue)
+  
+  # Empty list to store pathways that have greater than 1 metabolite in them
+  pathways_continue <- list()
+  
+  # Empty vector to store metabolites
+  metabolites_2MR <- c()
+  
+  # Get pathways that have more than 1 metabolite in them
+  # Also get list of metabolites
+  for (pathway in names(pathwayAndMetabolites)){
+    if (length(pathwayAndMetabolites[[pathway]]) > 1){
+      pathways_continue[[pathway]] <- pathwayAndMetabolites[[pathway]]
+      metabolites_2MR <- c(metabolites_2MR,pathwayAndMetabolites[[pathway]])
+    }
+  }
+  
+  # Get unique list of metabolites
+  metabolites_2MR <- unique(metabolites_2MR)
+  #print(metabolites_2MR)
+  # Empty list to store metabolites that have significant association with CAD
+  metab_sig = c()
+  for (metab in metabolites_2MR){
+    #print(metab)
+    mr_metab_harm <- perform_mr(tissue,pvalue,dataset,metab)
+    # If there are overlapping SNPs between metabolite and disease, then perform 2-MR calculations
+    if (nrow(mr_metab_harm)>0){
+      mr_metab = mr(mr_metab_harm)
+      # Check that pval of Inverse variance weighted method is less than 0.05 if more than 1 row of mr_metab is returned
+      # Check that pval of Wald ratio method is less than 0.05 if 1 row of mr_metab is returned
+      #print(mr_metab)
+      if ("Wald ratio" %in% mr_metab$method){
+        if (mr_metab[mr_metab["method"]=="Wald ratio","pval"] < 0.05) {metab_sig = c(metab_sig,metab)}
+      }
+      else if (mr_metab[mr_metab["method"]=="Inverse variance weighted","pval"] < 0.05){ metab_sig = c(metab_sig,metab)}
+    }
+  }
+  
+  
+  metab_interest_in_sig = 0
+  if (tolower(metab.name) %in% tolower(metab_sig)){metab_interest_in_sig = 1}
+  
+  # Empty vectors to store pathway association values
+  pathwaynames_fordf = c()
+  totalNumberMetabolites_fordf = c()
+  numMetabolitesAssociatedWithDisease_fordf = c()
+  metaboliteOfInterest_fordf = c()
+  metaboliteOfInterestName_fordf = c()
+  for (pathway in names(pathways_continue)){
+    pathwaynames_fordf = c(pathwaynames_fordf,pathway)
+    totalNumberMetabolites_fordf = c(totalNumberMetabolites_fordf,length(pathways_continue[[pathway]]))
+    num_met_assoc_disease = sum(pathways_continue[[pathway]] %in% metab_sig)
+    numMetabolitesAssociatedWithDisease_fordf = c(numMetabolitesAssociatedWithDisease_fordf,num_met_assoc_disease)
+    metaboliteOfInterest_fordf = c(metaboliteOfInterest_fordf,metab_interest_in_sig)
+    metaboliteOfInterestName_fordf = c(metaboliteOfInterestName_fordf,metab.name)
+  }
+  
+  return(data.frame(pathwayNames=pathwaynames_fordf,totalMetabolites=totalNumberMetabolites_fordf,
+                    numMetabolitesAssociatedWithDisease=numMetabolitesAssociatedWithDisease_fordf,
+                    percentMetabolites=100*numMetabolitesAssociatedWithDisease_fordf/totalNumberMetabolites_fordf,
+                    metabInterest=metaboliteOfInterest_fordf,metabInterestName=metaboliteOfInterestName_fordf))
+  
+}
+
+

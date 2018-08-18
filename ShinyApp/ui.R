@@ -48,7 +48,7 @@ fluidPage(
   conditionalPanel(
     condition = "output.renderUIForNoAssoc=='noassoc'",
     fluidRow(
-      column(6, tags$h3("No Association Found"))
+      column(6, tags$h3("No Overlap Between GWAS"))
     )
   ),   
     # This is all the outputs 

@@ -1,5 +1,5 @@
 source("plotFunctions.R")
-source("backend_functions_pvalue-cwc.R")
+source("backend_functions_pvalue-cwc-fast.R")
 library(ggplot2)
 
 server <- function(input, output,session) {
@@ -23,7 +23,7 @@ server <- function(input, output,session) {
                  if (input$runif !=0){
                    output$text1 <- renderText({""})
                    dat_ret <- tryCatch(perform_mr(input$tissue,input$pvalue,"",input$metabolite),error=function(e){return(1)})
-                   if (dat_ret!=1){
+                   if (nrow(dat_ret)>0){
                      dat_to_run$data <- as.data.frame(dat_ret)
                      dat_to_run_pathway$data <- calculate2MR_pathwayAnalysis(input$metabolite,input$tissue, input$pvalue, "")
                      output$renderUIForOutput <- reactive({'show'})
