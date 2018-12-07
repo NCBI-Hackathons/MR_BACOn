@@ -1,7 +1,10 @@
 # ignore all Rhistory files
 *.Rhistory
+ShinyApp/.Rhistory
 # ignore unnecessary & large cad gwas
 DataCleaningScripts\data\cad.additive.Oct2015.pub.zip
 DataCleaningScripts\data\cad.add.160614.website.txt
 DataCleaningScripts\data\cad.add.readme
-DataCleaningScripts\data\cad.txt
+DataCleaningScripts\data\cad.txt
+# ignore all temp files
+~*
